@@ -440,6 +440,12 @@ body {
   text-decoration: none; 
     }
 
+	 .gabs-link {
+    font-size: 0.95em;   /* reduz levemente o tamanho */
+    letter-spacing: 0.5px; /* mantém boa leitura */
+    line-height: 1.2;    /* ajusta espaçamento vertical */
+  }
+
     .header {
     display: flex;
     align-items: center;
@@ -924,6 +930,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
