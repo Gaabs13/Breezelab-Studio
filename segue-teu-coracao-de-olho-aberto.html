@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Segue teu coração de olho aberto | Breezelab</title>
+</head>
+<body>
+<header>
+<div class="lang-switcher">
+<button data-lang="pt">Português</button>
+<button data-lang="en">English</button>
+<button data-lang="es">Español</button>
+</div>
+</header>
+<div class="nav-links">
+<a href="index.html" class="home-link">Home</a>
+<a href="authorial.html" class="authorial-link">Authorial Works</a>
+<a href="commercial.html" class="comercial-link">Commercial Works</a>
+<a href="photography.html" class="photography-link">Photography Works</a>
+<a href="jobs.html" class="jobs-link">Jobs & Partnerships</a>
+</div>
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img">
+<div class="page-desc">
+<h2 class="subtitle" data-i18n="project-title-segue-teu-coracao-de-olho-aberto">Segue Teu Coração de Olho Aberto</h2>
+<p class="desc" data-i18n="project-subtitle-segue-teu-coracao-de-olho-aberto">"Fantoche da vida, boneca do acaso<br> 
+Aonde pretendes chegar com tanto descaso?"<br></p>
+</div>
+<div class="gallery-list">
+	<div class="gallery-grid-projects">
+<video src="https://res.cloudinary.com/breezelab/video/upload/v1759321447/02_peq2i0.mp4" alt="Ilustração 01" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
+<video src="https://res.cloudinary.com/breezelab/video/upload/v1759321452/01_ubh5kq.mp4" alt="Ilustração 02" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761742697/03_r2hbvz.png" alt="Ilustração 03" class="gallery-img" loading="lazy">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761742693/coracao01_fgjqfg.png" alt="Ilustração 04" class="gallery-img" loading="lazy">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761742694/coracao02_kqnthb.png" alt="Ilustração 05" class="gallery-img" loading="lazy">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761742695/coracao03_bfv9i9.png" alt="Ilustração 06" class="gallery-img" loading="lazy">
+<video src="https://res.cloudinary.com/breezelab/video/upload/v1759321446/03_gqbkqc.mp4" alt="Ilustração 07" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
+<video src="https://res.cloudinary.com/breezelab/video/upload/v1759321447/04_jokfjh.mp4" alt="Ilustração 08" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
+<!-- Adicione mais imagens conforme necessário -->
+</div>
+</div>
+<!-- Modal de zoom -->
+<div class="zoom-modal" id="zoom-modal">
+  <span class="close-btn" id="close-zoom">✖</span>
+  <div id="zoomed-content"></div>
+  <button class="prev-btn">‹</button>
+  <button class="next-btn">›</button>
+</div>
+<a href="https://wa.me/554888276336?text=Seja Bem vindo ao Breezelab! Fique a vontade para enviar uma mensagem!" class="whatsapp-link" id="whatsapp-link" target="_blank">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg" alt="WhatsApp">
+</a>
+<script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
+<script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+
+<script>
+i18next
+.use(i18nextHttpBackend)
+.use(i18nextBrowserLanguageDetector)
+.init({
+backend: {
+loadPath: 'idiomas/{{lng}}/translation.json'
+},
+fallbackLng: 'pt',
+interpolation: { escapeValue: false }
+}, function() {
+updateContent();
+});
+
+function updateContent() {
+document.querySelectorAll('[data-i18n]').forEach(el => {
+const key = el.getAttribute('data-i18n');
+el.innerHTML = i18next.t(key);
+});
+}
+
+document.querySelectorAll('[data-lang]').forEach(btn => {
+btn.addEventListener('click', () => {
+i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
+});
+});
+</script>
+<script>
+// Substitua 'URL_DA_IMAGEM_WHATSAPP' pelo caminho real da sua imagem
+(new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
+</script>
+<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
+<footer>
+<div class="footer-content">
+<p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
+</div></footer>
+<script src="gallery.js" defer></script>
+</body>
+</html>

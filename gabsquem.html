@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Sobre o Gabs | Breezelab</title>
+</head>
+<body class="gabs-page">
+<header>
+<div class="lang-switcher">
+<button data-lang="pt">Português</button>
+<button data-lang="en">English</button>
+<button data-lang="es">Español</button>
+</div>	
+<div class="nav-links">
+<a href="index.html" class="home-link">Home</a>
+</div>
+</header> 
+<div class="container">
+<section class="left-panel">
+<img src="Assets/breezelablogo.png" alt="Breezelab Logo" class="logo-img">
+<h2 class="subtitle" data-i18n="subtitle-gabs">Um pouco sobre mim:</h2>
+<p class="desc-gabs" data-i18n="description-gabs">
+Profissional PCD, nativo e residente da cidade de Florianópolis (SC); com experiência multidisciplinar e formação autodidata em áreas criativas e tecnológicas.<br> 
+Possui Espondilite Anquilosante (CID-10 M45), condição que contribuiu para o desenvolvimento de resiliência, adaptabilidade e uma abordagem centrada em processos e eficiência.<br>
+Atualmente dedica-se ao estudo de desenvolvimento Front-end, integrando competências em design gráfico, desenho manual e digital, edição de imagens e vídeos. Atua com foco na criação de soluções visuais funcionais acessíveis e humanizadas; aliando criatividade, pensamento analítico e domínio técnico.
+Tem facilidade para trabalhar em equipe e de forma autônoma. Destaca-se pela comunicação clara, atenção aos detalhes, escuta ativa e capacidade de adaptação a diferentes contextos.<br> 
+Interesse especial nas áreas de tecnologia, inovação social, acessibilidade digital e design com propósito.
+</p>
+<p class="desc-final-gabs" data-i18n="desc-final-gabs"><b class="boost">"Transformando limites em combustível criativo!"</b></p>
+<div class="button-grid">
+<a class="menu-btn" href="https://github.com/Gaabs13"><img src="Assets/github.png" alt="GitHub Logo" class="social-icon">Github</a>
+<a class="menu-btn" href="https://linkedin.com/in/gabrielc-souza/"><img src="Assets/linkedin.png" alt="LinkedIn Logo" class="social-icon">LinkedIn</a>
+</div>
+</section>
+<a href="https://wa.me/554888276336?text=Seja Bem vindo ao Breezelab! Fique a vontade para enviar uma mensagem!" class="whatsapp-link" id="whatsapp-link" target="_blank">
+<img src="Assets/whats.jpg" alt="WhatsApp">
+</a>
+<script>
+// Substitua 'URL_DA_IMAGEM_WHATSAPP' pelo caminho real da sua imagem
+(new Image()).src = "Assets/whats.jpg"; // Pré-carrega a imagem [16]
+</script>
+<script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
+<script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+
+<script>
+i18next
+.use(i18nextHttpBackend)
+.use(i18nextBrowserLanguageDetector)
+.init({
+backend: {
+loadPath: 'idiomas/{{lng}}/translation.json'
+},
+fallbackLng: 'pt',
+interpolation: { escapeValue: false }
+}, function() {
+updateContent();
+});
+
+function updateContent() {
+document.querySelectorAll('[data-i18n]').forEach(el => {
+const key = el.getAttribute('data-i18n');
+el.innerHTML = i18next.t(key);
+});
+}
+
+document.querySelectorAll('[data-lang]').forEach(btn => {
+btn.addEventListener('click', () => {
+i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
+});
+});
+</script>
+<section class="right-panel">
+<div class="gabs-area">
+<img src="Assets/gabsquem.jpg">
+</div>
+</section>
+</div>
+</body>
+</html>

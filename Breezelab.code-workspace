@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"CodeGPT.apiKey": "Gemini CLI",
+		"workbench.editor.autoLockGroups": {
+			"default": true,
+			"imagePreview.previewEditor": true,
+			"vscode.audioPreview": true,
+			"vscode.videoPreview": true,
+			"gitlens.rebase": true
+		},
+		"dotnetAcquisitionExtension.allowInvalidPaths": true
+	}
+}
