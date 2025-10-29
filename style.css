@@ -290,7 +290,7 @@ body {
     }
 
 	body {
-       background: url('Assets/background.png') center center / cover no-repeat fixed;
+       background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
  
 }
 
@@ -339,7 +339,7 @@ body {
     }
 
 	body {
-        background: url('Assets/background.png') center center / cover no-repeat fixed;
+        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
     
 }
 
@@ -926,4 +926,5 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
