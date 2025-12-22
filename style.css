@@ -70,14 +70,13 @@ body {
     height: 250px;
 }
 
-.logo-img {
-  max-width: 300px;
-  width: auto;
-  height: auto;
-  margin-top: 100px;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 1;
+.logo-img { 
+	max-width: 300px; 
+	width: auto; 
+	height: auto; 
+	margin: 50px auto; 
+	padding: 50px 0; 
+	transition: transform 0.3s ease; 
 }
 
 .subtitle {
@@ -925,6 +924,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
