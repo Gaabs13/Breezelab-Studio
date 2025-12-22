@@ -79,7 +79,7 @@ body {
 .logo-img {
   max-width: 300px;
   width: auto;
-  height: 200px;
+  height: 220px;
   margin: 20px auto;
   padding: 20px 0;
   transition: transform 0.3s ease;
@@ -930,6 +930,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
