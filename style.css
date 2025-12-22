@@ -80,8 +80,10 @@ body {
   max-width: 300px;
   width: auto;
   height: auto;
-  margin: 50px auto;
-  padding: 50px 0;
+  margin-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
   transition: transform 0.3s ease;
 }
 
@@ -930,6 +932,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
