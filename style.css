@@ -59,8 +59,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh;
-    overflow-y: visible; /* Permite rolagem se o conteúdo for maior */
+    height: 100%;
+    overflow-y: auto; /* Permite rolagem se o conteúdo for maior */
     padding: 2rem;
     box-sizing: border-box;
 }
@@ -931,6 +931,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
