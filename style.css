@@ -42,7 +42,8 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    min-height: calc(100vh - 60px);
+    height: auto;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -926,6 +927,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
