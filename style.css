@@ -41,17 +41,15 @@ body {
 
 
 .container {
-    display: flex;
-    min-height: calc(100vh - 60px);
-    height: auto;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    flex: 1 0 auto;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
-    padding: 0 4rem; /* Adiciona espaçamento lateral harmonico */
-    margin-top: 60px;
-}
+	display: flex; 
+	height: 100%; 
+	width: 100%; 
+	position: relative; 
+	z-index: 1; 
+	flex: 1 0 auto; 
+	box-sizing: border-box; /* Garante que o padding não aumente a largura total */ 
+	padding: 0 4rem; /* Adiciona espaçamento lateral harmonico */ 
+	margin-top: 60px; }
 
 .left-panel {
     .left-panel {
@@ -927,6 +925,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
