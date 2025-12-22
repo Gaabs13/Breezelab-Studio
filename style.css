@@ -53,17 +53,12 @@ body {
 }
 
 .left-panel {
-    flex: 1;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 100vh;
-    overflow-y: hidden; /* Permite rolagem se o conteúdo for maior */
-    padding: 2rem;
-    box-sizing: border-box;
+    .left-panel {
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+}
+
 }
 
 .left-panel > * {
@@ -931,6 +926,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
