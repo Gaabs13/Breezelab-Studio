@@ -11,11 +11,11 @@ A proposta não é criar algo complexo por si só, mas demonstrar **clareza estr
 ## 🎯 Objetivo do Projeto
 Construir um site funcional e responsivo que:
 
-- traduza uma identidade visual autoral para a web  
-- funcione bem em diferentes tamanhos de tela  
-- integre conteúdo multimídia (imagem e vídeo)  
-- utilize boas práticas de organização front-end  
-- sirva como base evolutiva para aplicações mais complexas  
+- Traduza uma identidade visual autoral para a web  
+- Funcione bem em diferentes tamanhos de tela 
+- Integre conteúdo multimídia (imagem e vídeo) 
+- Utilize boas práticas de organização front-end 
+- Sirva como base evolutiva para aplicações mais complexas  
 
 O projeto também atua como **ponte entre design e desenvolvimento**, refletindo uma abordagem orientada a **produto digital**.
 
@@ -23,11 +23,11 @@ O projeto também atua como **ponte entre design e desenvolvimento**, refletindo
 ## 📒 Descrição
 O site foi desenvolvido utilizando **HTML, CSS e JavaScript**, com foco em:
 
-- layout responsivo  
-- hierarquia visual clara  
-- legibilidade  
-- performance básica  
-- experiência do usuário  
+- Layout responsivo  
+- Hierarquia visual clara  
+- Legibilidade  
+- Performance básica  
+- Experiência do usuário  
 
 O processo partiu do **design no Figma**, utilizando a versão gratuita da ferramenta para agilizar decisões visuais e de responsividade antes da implementação em código.
 
@@ -77,10 +77,10 @@ O desenvolvimento seguiu um fluxo simples e replicável:
 
 O site segue em desenvolvimento contínuo, com planos de:
 
-- melhorias na organização do CSS  
-- expansão de interações em JavaScript  
-- migração gradual de partes do projeto para **React**  
-- integração com soluções mais próximas de um **produto digital completo**
+- Melhorias na organização do CSS  
+- Expansão de interações em JavaScript  
+- Migração gradual de partes do projeto para **React**  
+- Integração com soluções mais próximas de um **produto digital completo**
 
 
 ## 💭 Reflexão
@@ -99,6 +99,7 @@ Front-end Developer em constante evolução
 "Transformando limites em combustível criativo!"
 📍 Florianópolis — SC  
 🔗 LinkedIn: https://www.linkedin.com/in/gabrielc-souza/
+
 
 
 
