@@ -1,4 +1,4 @@
-# 🪶 Breezelab — Website
+# 🪶 Breezelab Studio - Em andamento
 
 ## 🚀 Introdução
 Este repositório reúne o desenvolvimento do **site institucional do Breezelab**, um laboratório visual e tecnológico onde **arte, cultura e engenharia se encontram**.
@@ -7,7 +7,6 @@ Mais do que um site, este projeto funciona como um **exercício prático de Fron
 
 A proposta não é criar algo complexo por si só, mas demonstrar **clareza estrutural, intenção visual e domínio progressivo do processo de desenvolvimento web**.
 
----
 
 ## 🎯 Objetivo do Projeto
 Construir um site funcional e responsivo que:
@@ -20,7 +19,6 @@ Construir um site funcional e responsivo que:
 
 O projeto também atua como **ponte entre design e desenvolvimento**, refletindo uma abordagem orientada a **produto digital**.
 
----
 
 ## 📒 Descrição
 O site foi desenvolvido utilizando **HTML, CSS e JavaScript**, com foco em:
@@ -35,7 +33,6 @@ O processo partiu do **design no Figma**, utilizando a versão gratuita da ferra
 
 A construção do layout priorizou **soluções simples e consistentes**, evitando dependência de frameworks, com o objetivo de reforçar o entendimento dos **fundamentos do front-end**.
 
----
 
 ## 🤖 Tecnologias Utilizadas
 Este projeto utiliza tecnologias web fundamentais, aplicadas de forma consciente e prática:
@@ -55,7 +52,6 @@ Este projeto utiliza tecnologias web fundamentais, aplicadas de forma consciente
 - **Figma (Free)**  
   Planejamento visual, layout e apoio ao processo de responsividade.
 
----
 
 ## 🧐 Processo de Criação
 O desenvolvimento seguiu um fluxo simples e replicável:
@@ -75,7 +71,6 @@ O desenvolvimento seguiu um fluxo simples e replicável:
 5. **Ajustes e refinamento**  
    Revisões visuais, pequenos refactors e melhoria da experiência geral.
 
----
 
 ## 🚀 Status do Projeto
 🟡 **Em evolução**
@@ -87,7 +82,6 @@ O site segue em desenvolvimento contínuo, com planos de:
 - migração gradual de partes do projeto para **React**  
 - integração com soluções mais próximas de um **produto digital completo**
 
----
 
 ## 💭 Reflexão
 Este projeto não busca impressionar pela complexidade técnica, mas demonstrar algo essencial no desenvolvimento front-end:
@@ -98,10 +92,10 @@ Cada decisão — visual ou técnica — parte da ideia de que **o código deve 
 
 O Breezelab funciona como um espaço de **experimentação, aprendizado e consolidação de fundamentos**, onde design e tecnologia coexistem de forma orgânica.
 
----
 
 ## 👤 Autor
 **Gabriel Carlos de Souza**  
 Front-end Developer em constante evolução - "Transformando limites em combustível criativo!"
 📍 Florianópolis — SC  
 🔗 LinkedIn: https://www.linkedin.com/in/gabrielc-souza/
+
