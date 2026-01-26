@@ -1,4 +1,4 @@
-# 🪶 Breezelab Studio - Em andamento
+# 🌬️ Breezelab Studio - Em andamento
 
 ## 🚀 Introdução
 Este repositório reúne o desenvolvimento do **site institucional do Breezelab**, um laboratório visual e tecnológico onde **arte, cultura e engenharia se encontram**.
@@ -99,5 +99,6 @@ Front-end Developer em constante evolução
 "Transformando limites em combustível criativo!"
 📍 Florianópolis — SC  
 🔗 LinkedIn: https://www.linkedin.com/in/gabrielc-souza/
+
 
 
