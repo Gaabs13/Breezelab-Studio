@@ -95,7 +95,9 @@ O Breezelab funciona como um espaço de **experimentação, aprendizado e consol
 
 ## 👤 Autor
 **Gabriel Carlos de Souza**  
-Front-end Developer em constante evolução - "Transformando limites em combustível criativo!"
+Front-end Developer em constante evolução 
+"Transformando limites em combustível criativo!"
 📍 Florianópolis — SC  
 🔗 LinkedIn: https://www.linkedin.com/in/gabrielc-souza/
+
 
