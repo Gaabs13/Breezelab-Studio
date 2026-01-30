@@ -236,6 +236,7 @@ body {
             border-radius: 50%; /* Torna a imagem circular (se for quadrada) [10, 11] */
             box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para destaque */
             transition: transform 0.3s ease; /* Transição suave para efeitos de hover [15] */
+			position: fixed;
         }
 
         #whatsapp-link img:hover {
@@ -277,13 +278,13 @@ body {
 
 .footer-content {
     background-color: #00ffcc;
-    padding: 8px 0;
+    padding: 6px 0;
     text-align: center;
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     font-size: 0.85rem;
     font-weight: 400;
-    min-height: 24px;
-    height: 32px;
+    min-height: 16px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,7 +316,6 @@ footer {
     border: none;
     background: none;
     flex-shrink: 0;
-	position: fixed;
 }
 
 /* Garante que o conteúdo principal não sobreponha o rodapé */
@@ -981,6 +981,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
