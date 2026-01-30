@@ -308,6 +308,7 @@ footer {
     padding: 0;
     border: none;
     background: none;
+	pointer-events: none;
 }
 
 /* Garante que o conteúdo principal não sobreponha o rodapé */
@@ -973,6 +974,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
