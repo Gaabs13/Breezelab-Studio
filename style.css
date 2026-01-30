@@ -236,7 +236,7 @@ body {
             border-radius: 50%; /* Torna a imagem circular (se for quadrada) [10, 11] */
             box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para destaque */
             transition: transform 0.3s ease; /* Transição suave para efeitos de hover [15] */
-			position: fixed;
+		
         }
 
         #whatsapp-link img:hover {
@@ -288,8 +288,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 10;
+    position: static;
+    z-index: auto;
     margin-top: 0;
 }
 
@@ -981,6 +981,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
