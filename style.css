@@ -225,9 +225,10 @@ body {
             position: fixed; /* Fixa o elemento na janela de visualização [8] */
             bottom: 10px;    /* 20 pixels da parte inferior [8] */
             left: 20px;    /* 0px;     /* 20 pixels da parte direita [8] */
-            z-index: 1000;   /* Garante que o ícone fique acima de outros elementos */
+            z-index: 9999;   /* Garante que o ícone fique acima de outros elementos */
             display: block;  /* Necessário para dimensionamento correto do link */
             text-decoration: none; /* Remove o sublinhado padrão do link */
+	        pointer-events: auto;
         }
 
         #whatsapp-link img {
@@ -278,19 +279,12 @@ body {
 
 .footer-content {
     background-color: #00ffcc;
-    padding: 6px 0;
-    text-align: center;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    font-size: 0.85rem;
-    font-weight: 400;
-    min-height: 16px;
-    height: 22px;
+    padding: 4px 12px;   /* controla o tamanho */
+    font-size: 0.7rem;
+    line-height: 1.2;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: static;
-    z-index: auto;
-    margin-top: 0;
 }
 
 .footer-content a {
@@ -979,6 +973,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
