@@ -298,10 +298,6 @@ body {
     color: #00796b;
 }
 
-.footer-content p:hover {
-    color: #00796b;
-}
-
 footer {
     width: 100%;
     margin: 0;
@@ -973,6 +969,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
