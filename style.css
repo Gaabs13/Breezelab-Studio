@@ -155,7 +155,7 @@ body {
 }
 
 .menu-btn {
-    display: fixed;
+    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 28px;
@@ -969,6 +969,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
