@@ -576,9 +576,6 @@ body, html {
     transition: color 0.2s;
 }
 
-.footer-content a:hover {
-    color: #00796b;
-}
 
 .footer-content p:hover {
     color: #00796b;
@@ -969,6 +966,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
