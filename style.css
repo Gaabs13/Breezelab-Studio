@@ -294,8 +294,9 @@ body {
 }
 
 
-.footer-content a:hover {
+.footer-link :hover {
     color: #00796b;
+	text-decoration: none;
 }
 
 footer {
@@ -966,6 +967,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
