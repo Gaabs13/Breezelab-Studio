@@ -842,6 +842,12 @@ body, html {
     padding: 0;
     width: 100%;
     max-width: none;
+	pointer-events: auto;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .gallery-list img {
@@ -1104,6 +1110,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
