@@ -685,6 +685,12 @@ body, html {
     margin: 36px auto 0 auto;
     padding: 0 0px;
     background: transparent;
+	pointer-events: auto;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .top-btn {
@@ -790,6 +796,12 @@ body, html {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
+  pointer-events: auto;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .gallery-grid-projects {
@@ -919,6 +931,12 @@ body, html {
   opacity: 0.8;
   overflow: hidden; 
   box-sizing: border-box;/* Garante que o texto não transborde */
+  pointer-events: auto;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .project-title,
@@ -1086,6 +1104,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
