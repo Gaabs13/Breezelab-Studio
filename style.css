@@ -207,19 +207,6 @@ body::after {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-img, video {
-    /* Impede o "arrastar e soltar" */
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-select: none;
-    /* BLOQUEIO MOBILE: impede o menu de salvar ao segurar o dedo */
-    -webkit-touch-callout: none;
-    /* MANTÉM O CLIQUE ATIVO */
-    pointer-events: auto !important; 
-}
-
 .lang-switcher button {
     display: flex;
     align-items: center;
@@ -1099,6 +1086,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
