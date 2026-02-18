@@ -110,9 +110,6 @@ body::after {
     user-select: none;
 }
 
-video::-internal-media-controls-download-button {
-    display: none;
-}
 .subtitle {
     font-size: 2.3rem;
     font-weight: 700;
@@ -1107,6 +1104,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
