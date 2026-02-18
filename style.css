@@ -75,6 +75,12 @@ body {
 .home-img {
     width: auto;
     height: 250px;
+	pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .logo-img { 
@@ -83,7 +89,12 @@ body {
 	height: auto; 
 	margin: 50px auto; 
 	padding: 50px 0; 
-	transition: transform 0.3s ease; 
+	transition: transform 0.3s ease;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .subtitle {
@@ -275,6 +286,11 @@ body {
     outline: none;
     display: block;
     background-color: transparent;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .footer-content {
@@ -354,6 +370,14 @@ body, html {
     width: 100%;
   }
 
+.footer {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
   .footer-content {
     font-size: 0.75rem;
     flex-direction: column;
@@ -400,6 +424,10 @@ body, html {
 
   .footer {
 	width: 100%;
+	margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
   }
 
 
@@ -442,6 +470,12 @@ body, html {
         box-sizing: border-box;
         position: relative;
         z-index: 1;
+		pointer-events: none;
+       -webkit-user-select: none;
+       -khtml-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
     }
 
     .project-grid {
@@ -584,7 +618,10 @@ body, html {
 
 footer {
     width: 100%;
-   
+	margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
 }
 
 /* Garante que o conteúdo principal não sobreponha o rodapé */
@@ -592,10 +629,10 @@ body, html {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .home-link {
@@ -615,6 +652,12 @@ body, html {
     margin: 40px auto 20px auto;
     width: 180px;
     height: auto;
+	pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .project-grid {
@@ -663,6 +706,12 @@ body, html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   background-color: transparent;
   margin:0;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .gallery-img:hover {
@@ -696,6 +745,12 @@ body, html {
     box-shadow: 0 0 32px  transparent;
     object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
     overflow: hidden;
+	pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .zoom-modal video {
@@ -704,6 +759,12 @@ body, html {
     box-shadow: 0 0 32px  transparent;
     object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
     overflow: hidden;
+	pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .gallery-grid {
@@ -730,6 +791,12 @@ body, html {
   height: auto;
   border-radius: 10px;
   display: block;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 
@@ -745,6 +812,12 @@ body, html {
 
 .gallery-list img {
     margin-bottom: 0;
+	pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .project-cover {
@@ -755,6 +828,12 @@ body, html {
   overflow: hidden;
   background: transparent;
   display: block;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .project-cover .cover-img,
@@ -770,6 +849,12 @@ body, html {
     background: transparent;
     transition: transform 0.4s ease; /* Transição suave para o zoom */
     overflow: hidden; /* Garante que o conteúdo não transborde */
+	pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .project-cover:hover .cover-img {
@@ -916,6 +1001,12 @@ border: none;
 outline: none;
 display: block;
 background-color: transparent;
+pointer-events: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 .zoom-modal button.prev-btn,
@@ -967,6 +1058,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
