@@ -552,7 +552,7 @@ body, html {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-
+		width: 100%;
     }
 
     .right-panel {
@@ -1110,6 +1110,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
