@@ -75,7 +75,7 @@ body {
 .home-img {
     width: auto;
     height: 250px;
-	pointer-events: none;
+	pointer-events: auto;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -90,6 +90,7 @@ body {
 	margin: 50px auto; 
 	padding: 50px 0; 
 	transition: transform 0.3s ease;
+	pointer-events: none;
 	-webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -286,6 +287,7 @@ body {
     outline: none;
     display: block;
     background-color: transparent;
+	pointer-events: none;
 	-webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -551,6 +553,7 @@ body, html {
        display: block;
        z-index: 20;
        position: relative; /* Esconde o logo em telas pequenas */
+	   pointer-events: none;
     }
 
     .subtitle {
@@ -573,6 +576,7 @@ body, html {
         grid-template-columns: 1fr;
         padding: 0 1rem;
         gap: 16px;
+		pointer-events: auto;
     }
 
     #whatsapp-link {
@@ -706,7 +710,7 @@ body, html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   background-color: transparent;
   margin:0;
-  pointer-events: none;
+  pointer-events: auto;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -745,7 +749,7 @@ body, html {
     box-shadow: 0 0 32px  transparent;
     object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
     overflow: hidden;
-	pointer-events: none;
+	pointer-events: auto;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -759,7 +763,7 @@ body, html {
     box-shadow: 0 0 32px  transparent;
     object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
     overflow: hidden;
-	pointer-events: none;
+	pointer-events: auto;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -791,7 +795,7 @@ body, html {
   height: auto;
   border-radius: 10px;
   display: block;
-  pointer-events: none;
+  pointer-events: auto;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -812,7 +816,7 @@ body, html {
 
 .gallery-list img {
     margin-bottom: 0;
-	pointer-events: none;
+	pointer-events: auto;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -828,7 +832,7 @@ body, html {
   overflow: hidden;
   background: transparent;
   display: block;
-  pointer-events: none;
+  pointer-events: auto;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -849,7 +853,7 @@ body, html {
     background: transparent;
     transition: transform 0.4s ease; /* Transição suave para o zoom */
     overflow: hidden; /* Garante que o conteúdo não transborde */
-	pointer-events: none;
+	pointer-events: auto;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -967,15 +971,15 @@ body, html {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-transition: color 0.2s;
-line-height: 1.1;
-background: none;
-border: none;
-padding: 0;
-margin: 0;
-display: inline-block;
-position: static;
-white-space: nowrap;
+    transition: color 0.2s;
+    line-height: 1.1;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: static;
+    white-space: nowrap;
 }
 
 .home-link:hover,
@@ -1058,6 +1062,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
