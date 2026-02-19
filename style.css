@@ -1,134 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 /* ================================================= */
-/* ===================== TOKENS ==================== */
+/* ===================== BASE ====================== */
 /* ================================================= */
 
-:root {
-  --primary: #00ffcc;
-  --black: #000;
-  --white: #fff;
-
-  --font-main: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-  --font-heading: 'Agdasima', sans-serif;
-  --font-body: 'Poppins', sans-serif;
-
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-pill: 999px;
-
-  --shadow-soft: 0 2px 12px #00ffcc22;
-  --shadow-strong: 0 4px 24px #00ffcc55;
-
-  --transition-fast: 0.2s ease;
-  --transition-smooth: 0.3s ease;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* ================================================= */
-/* ====================== BASE ===================== */
-/* ================================================= */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-main);
-  background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+body {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: transparent;
+    pointer-events: none;
 }
 
 /* ================================================= */
-/* ===================== LAYOUT ==================== */
+/* =================== TIPOGRAFIA ================== */
 /* ================================================= */
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  z-index: 10;
+.agdasima-regular {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.container {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  margin-top: 60px;
-  padding: 0 4rem;
+.agdasima-bold {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
-
-.left-panel,
-.right-panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-panel {
-  flex: 1;
-  flex-direction: column;
-  padding: 2rem;
-  color: var(--white);
-}
-
-.right-panel {
-  width: 56.25vh;
-  height: 100vh;
-  flex-shrink: 0;
-}
-
-/* ================================================= */
-/* ==================== TIPOGRAFIA ================= */
-/* ================================================= */
 
 .subtitle {
-  font-family: var(--font-heading);
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--primary);
-  text-align: center;
-  margin-bottom: 32px;
-  letter-spacing: 1px;
-}
-
-.desc,
-.desc-gabs,
-.desc-final {
-  font-family: var(--font-body);
-  text-align: center;
-  color: var(--white);
-  max-width: 600px;
-  margin-bottom: 20px;
-  line-height: 1.7;
-  letter-spacing: 1px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 32px 0;
+    letter-spacing: 1px;
+    font-family: 'Agdasima', sans-serif;
+    color: #00ffcc;
 }
 
 .desc,
 .desc-final {
-  font-size: 0.83rem;
-  font-weight: 600;
+    font-size: 0.83rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 20px 0;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    max-width: 600px;
+    color: #fff;
+}
+
+.desc-final {
+    margin-bottom: 28px;
+    font-weight: bold;
 }
 
 .desc-gabs {
-  font-size: 0.73rem;
+    font-size: 0.73rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 20px 0;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    max-width: 600px;
+    color: #fff;
 }
 
-.desc-final {
-  font-weight: bold;
-  margin-bottom: 28px;
+/* ================================================= */
+/* ==================== LAYOUT ===================== */
+/* ================================================= */
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    padding: 0 4rem;
+    margin-top: 60px;
+}
+
+.left-panel {
+    flex: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    overflow-y: visible;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.left-panel > * {
+    position: relative;
+    z-index: 2;
+}
+
+.right-panel {
+    width: 56.25vh;
+    flex-shrink: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ================================================= */
+/* ===================== IMAGENS =================== */
+/* ================================================= */
+
+.home-img {
+    width: auto;
+    height: 250px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.logo-img {
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    margin: 50px auto;
+    padding: 50px 0;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ================================================= */
+/* ===================== GRIDS ===================== */
+/* ================================================= */
+
+.social-grid,
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 14px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 44px;
 }
 
 /* ================================================= */
@@ -137,208 +182,132 @@ body::after {
 
 .menu-btn,
 .lang-switcher button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  font-family: var(--font-heading);
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--primary);
-  background: transparent;
-  border: 2px solid var(--primary);
-  letter-spacing: 0.5px;
-  transition: var(--transition-fast);
-  box-shadow: var(--shadow-soft);
-  white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    height: 36px;
+    padding: 0 1px;
+    background: transparent;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Agdasima', sans-serif;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px #00ffcc22;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    gap: 0.5rem;
+    box-sizing: border-box;
 }
 
 .menu-btn {
-  border-radius: var(--radius-pill);
+    border-radius: 999px;
 }
 
 .lang-switcher button {
-  border-radius: var(--radius-sm);
-  margin: 30px 10px 0 2px;
-  transform: translateY(-9px);
+    border-radius: 10px;
+    margin: 1px 2px;
+    margin-top: 30px;
+    margin-right: 10px;
+    transform: translateY(-9px);
 }
 
 .menu-btn:hover,
 .lang-switcher button:hover {
-  background: var(--primary);
-  color: var(--black);
-  box-shadow: var(--shadow-strong);
-}
-
-/* ================================================= */
-/* ====================== GRIDS ==================== */
-/* ================================================= */
-
-.button-grid,
-.social-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px 14px;
-  width: 80%;
-  max-width: 300px;
-  margin-bottom: 44px;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px 32px;
-  margin-top: 36px;
-}
-
-/* ================================================= */
-/* ===================== MÍDIA ===================== */
-/* ================================================= */
-
-.logo-img {
-  width: 180px;
-  margin: 40px auto 20px;
-  transition: transform var(--transition-smooth);
-  pointer-events: none;
-  user-select: none;
-}
-
-.video-area {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.video-area video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  pointer-events: none;
-  user-select: none;
-}
-
-/* ================================================= */
-/* ===================== GALERIA =================== */
-/* ================================================= */
-
-.gallery-grid {
-  column-count: 3;
-  column-gap: 5px;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
-
-.gallery-img {
-  width: 100%;
-  border-radius: var(--radius-md);
-  transition: transform var(--transition-smooth);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.gallery-img:hover {
-  transform: scale(1.05);
-}
-
-/* ================================================= */
-/* ===================== MODAL ===================== */
-/* ================================================= */
-
-.zoom-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  backdrop-filter: blur(8px);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.zoom-modal.active {
-  display: flex;
-}
-
-#close-zoom {
-  position: absolute;
-  top: 24px;
-  right: 32px;
-  font-size: 2.5rem;
-  color: var(--white);
-  cursor: pointer;
-}
-
-#close-zoom:hover {
-  color: var(--primary);
+    background: #00ffcc;
+    color: #000;
+    box-shadow: 0 4px 24px #00ffcc55;
 }
 
 /* ================================================= */
 /* ===================== FOOTER ==================== */
 /* ================================================= */
 
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
 .footer-content {
-  background: var(--primary);
-  font-size: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 0;
-  color: var(--black);
+    background-color: #00ffcc;
+    padding: 12px 0;
+    font-size: 0.75rem;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    min-height: 24px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    color: #000;
+}
+
+.footer-content a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-content p:hover {
+    color: #00796b;
 }
 
 /* ================================================= */
-/* =================== RESPONSIVO ================== */
+/* ================= RESPONSIVIDADE ================= */
 /* ================================================= */
 
 @media (max-width: 1024px) {
 
-  .container {
-    flex-direction: column;
-    padding: 0;
-  }
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
 
-  .left-panel,
-  .right-panel {
-    width: 100%;
-    height: auto;
-  }
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+        overflow-y: auto;
+    }
 
-  .right-panel {
-    height: 56.25vw;
-  }
+    .right-panel {
+        height: 56.25vw;
+        min-height: auto;
+    }
 
-  .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 0 2rem;
-  }
-
-  .project-subtitle {
-    display: none !important;
-  }
+    .project-subtitle {
+        display: none !important;
+    }
 }
 
 @media (max-width: 768px) {
 
-  .right-panel {
-    display: none;
-  }
+    .right-panel {
+        display: none;
+    }
 
-  .subtitle {
-    font-size: 1.8rem;
-  }
+    .subtitle {
+        font-size: 1.8rem;
+    }
 
-  .button-grid,
-  .social-grid {
-    grid-template-columns: 1fr;
-    max-width: 180px;
-  }
+    .button-grid,
+    .social-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 180px;
+    }
 
-  .project-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-    gap: 16px;
-  }
-
-  .project-subtitle {
-    display: none !important;
-  }
-}
+    .project-gri
