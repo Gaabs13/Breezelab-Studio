@@ -1,313 +1,964 @@
+/* ===================================================== */
+/* =================== IMPORTAÇÃO FONTS ================= */
+/* ===================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-/* ================================================= */
-/* ===================== BASE ====================== */
-/* ================================================= */
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 1;
-    background: transparent;
-    pointer-events: none;
-}
-
-/* ================================================= */
-/* =================== TIPOGRAFIA ================== */
-/* ================================================= */
+/* ===================================================== */
+/* =================== FAMÍLIA AGDASIMA ================= */
+/* ===================================================== */
 
 .agdasima-regular {
-    font-family: "Agdasima", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Agdasima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .agdasima-bold {
-    font-family: "Agdasima", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Agdasima", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-.subtitle {
-    font-size: 2.3rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 0 32px 0;
-    letter-spacing: 1px;
-    font-family: 'Agdasima', sans-serif;
-    color: #00ffcc;
+
+/* ===================================================== */
+/* ===================== BASE GLOBAL ==================== */
+/* ===================================================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.desc,
-.desc-final {
-    font-size: 0.83rem;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin: 0 0 20px 0;
-    line-height: 1.7;
-    letter-spacing: 1px;
-    max-width: 600px;
-    color: #fff;
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: transparent;
+  pointer-events: none;
 }
 
-.desc-final {
-    margin-bottom: 28px;
-    font-weight: bold;
-}
 
-.desc-gabs {
-    font-size: 0.73rem;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin: 0 0 20px 0;
-    line-height: 1.7;
-    letter-spacing: 1px;
-    max-width: 600px;
-    color: #fff;
-}
-
-/* ================================================= */
-/* ==================== LAYOUT ===================== */
-/* ================================================= */
+/* ===================================================== */
+/* ======================== HEADER ====================== */
+/* ===================================================== */
 
 .header {
-    display: flex;
-    align-items: flex-end;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
+
+/* ===================================================== */
+/* =================== LANGUAGE SWITCHER ================= */
+/* ===================================================== */
+
+.lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-switcher button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  height: 36px;
+  min-width: 0;
+  padding: 2 2px;
+  background: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Agdasima', sans-serif;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px #00ffcc22;
+  letter-spacing: 0.5px;
+  margin: 1px 2px;
+  margin-top: 30px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  transform: translateY(-9px);
+}
+
+.lang-switcher button:hover {
+  background: #00ffcc;
+  color: #000;
+  box-shadow: 0 4px 24px #00ffcc55;
+}
+
+
+/* ===================================================== */
+/* ======================== LAYOUT ====================== */
+/* ===================================================== */
+
 .container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    flex: 1 0 auto;
-    box-sizing: border-box;
-    padding: 0 4rem;
-    margin-top: 60px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+  padding: 0 4rem;
+  margin-top: 60px;
 }
 
 .left-panel {
-    flex: 1;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 100%;
-    overflow-y: visible;
-    padding: 2rem;
-    box-sizing: border-box;
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  overflow-y: visible;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
 }
 
 .left-panel > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .right-panel {
-    width: 56.25vh;
-    flex-shrink: 0;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  width: 56.25vh;
+  flex-shrink: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-/* ================================================= */
-/* ===================== IMAGENS =================== */
-/* ================================================= */
+
+/* ===================================================== */
+/* ======================== IMAGENS ===================== */
+/* ===================================================== */
 
 .home-img {
-    width: auto;
-    height: 250px;
-    pointer-events: none;
-    user-select: none;
+  width: auto;
+  height: 250px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .logo-img {
-    max-width: 300px;
-    width: auto;
-    height: auto;
-    margin: 50px auto;
-    padding: 50px 0;
-    transition: transform 0.3s ease;
-    pointer-events: none;
-    user-select: none;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  margin: 50px auto;
+  padding: 50px 0;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/* ================================================= */
-/* ===================== GRIDS ===================== */
-/* ================================================= */
 
-.social-grid,
+/* ===================================================== */
+/* ======================= TIPOGRAFIA =================== */
+/* ===================================================== */
+
+.subtitle {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 32px 0;
+  letter-spacing: 1px;
+  font-family: 'Agdasima', sans-serif;
+  color: #00ffcc;
+}
+
+.desc-final {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 28px 0;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: #fff;
+  font-weight: bold;
+}
+
+.desc-gabs {
+  font-size: 0.73rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 20px 0;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  max-width: 600px;
+  color: #fff;
+}
+
+.desc {
+  font-size: 0.83rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 20px 0;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  max-width: 600px;
+  color: #fff;
+}
+
+
+/* ===================================================== */
+/* ========================= GRIDS ====================== */
+/* ===================================================== */
+
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 14px;
+  width: 80%;
+  max-width: 300px;
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
 .button-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px 14px;
-    width: 80%;
-    max-width: 300px;
-    margin-bottom: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 14px;
+  width: 80%;
+  max-width: 300px;
+  margin-top: 0;
+  margin-bottom: 44px;
 }
 
-/* ================================================= */
-/* ===================== BOTÕES ==================== */
-/* ================================================= */
 
-.menu-btn,
-.lang-switcher button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 28px;
-    height: 36px;
-    padding: 0 1px;
-    background: transparent;
-    color: #00ffcc;
-    border: 2px solid #00ffcc;
-    font-size: 0.82rem;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Agdasima', sans-serif;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 12px #00ffcc22;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    gap: 0.5rem;
-    box-sizing: border-box;
-}
+/* ===================================================== */
+/* ========================= BOTÕES ===================== */
+/* ===================================================== */
 
 .menu-btn {
-    border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  height: 36px;
+  min-width: 0;
+  padding: 0 1px;
+  background: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Agdasima', sans-serif;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px #00ffcc22;
+  letter-spacing: 0.5px;
+  margin: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.lang-switcher button {
-    border-radius: 10px;
-    margin: 1px 2px;
-    margin-top: 30px;
-    margin-right: 10px;
-    transform: translateY(-9px);
+.menu-btn:hover {
+  background: #00ffcc;
+  color: #000;
+  box-shadow: 0 4px 24px #00ffcc55;
 }
 
-.menu-btn:hover,
-.lang-switcher button:hover {
-    background: #00ffcc;
-    color: #000;
-    box-shadow: 0 4px 24px #00ffcc55;
+/* ===================================================== */
+/* ====================== WHATSAPP ====================== */
+/* ===================================================== */
+
+#whatsapp-link {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  z-index: 9999;
+  display: block;
+  text-decoration: none;
+  pointer-events: auto;
 }
 
-/* ================================================= */
-/* ===================== FOOTER ==================== */
-/* ================================================= */
-
-footer {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
+#whatsapp-link img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
+
+#whatsapp-link img:hover {
+  transform: scale(1.1);
+}
+
+
+/* ===================================================== */
+/* ======================= VIDEO AREA =================== */
+/* ===================================================== */
+
+.video-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  overflow: hidden;
+}
+
+.video-area video {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+  outline: none;
+  display: block;
+  background-color: transparent;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* ===================================================== */
+/* ======================== FOOTER ====================== */
+/* ===================================================== */
 
 .footer-content {
-    background-color: #00ffcc;
-    padding: 12px 0;
-    font-size: 0.75rem;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    font-weight: 400;
-    min-height: 24px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
-    color: #000;
+  background-color: #00ffcc;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-content a {
-    color: #000;
-    text-decoration: none;
-    transition: color 0.2s;
+  color: #000;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.footer-link :hover {
+  color: #00796b;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+
+/* ===================================================== */
+/* =================== BASE (REPETIÇÕES) ================= */
+/* ===================================================== */
+
+body, html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  background-color: #00ffcc;
+  padding: 12px 0;
+  text-align: center;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  min-height: 24px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  margin-top: 0;
+}
+
+.footer-content a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .footer-content p:hover {
-    color: #00796b;
+  color: #00796b;
 }
 
-/* ================================================= */
-/* ================= RESPONSIVIDADE ================= */
-/* ================================================= */
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ===================================================== */
+/* ===================== HOME LINK ====================== */
+/* ===================================================== */
+
+.home-link {
+  position: absolute;
+  top: 52px;
+  left: 30px;
+  font-size: 1.2em;
+  font-family: 'Agdasima', sans-serif;
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
+}
+
+
+/* ===================================================== */
+/* =================== PROJECT GRID ===================== */
+/* ===================================================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 24px 32px;
+  max-width: auto;
+  margin: 36px auto 0 auto;
+  padding: 0 0px;
+  background: transparent;
+  pointer-events: auto;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* ===================================================== */
+/* ===================== TOP BUTTON ===================== */
+/* ===================================================== */
+
+.top-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+/* ===================================================== */
+/* ===================== PAGE DESC ====================== */
+/* ===================================================== */
+
+.page-desc {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* ===================================================== */
+/* ===================== PROJECT COVER ================== */
+/* ===================================================== */
+
+.project-cover {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 32px auto;
+  display: block;
+  border-radius: 18px;
+}
+
+
+/* ===================================================== */
+/* ===================== GALLERY GRID =================== */
+/* ===================================================== */
+
+.gallery-grid {
+  column-count: 2;
+  column-gap: 18px;
+  max-width: 900px;
+  margin: 0 auto 48px auto;
+  padding: 0 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+
+/* ===================================================== */
+/* ======================= ZOOM MODAL =================== */
+/* ===================================================== */
+
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.zoom-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 18px;
+}
+
+
+/* ===================================================== */
+/* ===================== MODAL CLOSE BTN ================= */
+/* ===================================================== */
+
+.zoom-close {
+  position: absolute;
+  top: 28px;
+  right: 36px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* ===================================================== */
+/* ===================== MODAL NAVIGATION =============== */
+/* ===================================================== */
+
+.zoom-prev,
+.zoom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  user-select: none;
+}
+
+.zoom-prev {
+  left: 40px;
+}
+
+.zoom-next {
+  right: 40px;
+}
+
+
+/* ===================================================== */
+/* =================== PROJECT NAV LINKS ================= */
+/* ===================================================== */
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 520px;
+  margin: 0 auto 32px auto;
+  padding: 0 12px;
+}
+
+.project-nav a {
+  text-decoration: none;
+  font-family: 'Agdasima', sans-serif;
+  font-size: 0.9rem;
+  color: #00ffcc;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.project-nav a:hover {
+  opacity: 0.7;
+}
+
+
+/* ===================================================== */
+/* ======================== GABS ======================== */
+/* ===================================================== */
+
+.gabs-container {
+  max-width: 520px;
+  margin: 0 auto 36px auto;
+  padding: 0 12px;
+  text-align: center;
+}
+
+
+/* ===================================================== */
+/* ====================== RESPONSIVE ==================== */
+/* ===================================================== */
+
+
+/* -------------------- 1200px -------------------- */
+
+@media (max-width: 1200px) {
+
+  .right-panel {
+    width: 45vh;
+  }
+
+}
+
+
+/* -------------------- 1024px -------------------- */
 
 @media (max-width: 1024px) {
 
-    .container {
-        flex-direction: column;
-        height: auto;
-        padding: 0;
-    }
+  .container {
+    padding: 0 2rem;
+  }
 
-    .left-panel,
-    .right-panel {
-        width: 100%;
-        height: auto;
-        min-height: 50vh;
-        overflow-y: auto;
-    }
+  .gallery-grid {
+    column-count: 1;
+  }
 
-    .right-panel {
-        height: 56.25vw;
-        min-height: auto;
-    }
-
-    .project-subtitle {
-        display: none !important;
-    }
 }
+
+
+/* -------------------- 768px -------------------- */
 
 @media (max-width: 768px) {
 
-    .right-panel {
-        display: none;
-    }
+  .container {
+    flex-direction: column;
+    padding: 0 1.2rem;
+  }
 
-    .subtitle {
-        font-size: 1.8rem;
-    }
+  .right-panel {
+    width: 100%;
+    height: auto;
+  }
 
-    .button-grid,
-    .social-grid {
-        grid-template-columns: 1fr;
-        width: 100%;
-        max-width: 180px;
-    }
+  .left-panel {
+    padding: 1.5rem 0;
+  }
 
-    .project-gri
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .desc,
+  .desc-gabs,
+  .desc-final {
+    font-size: 0.78rem;
+  }
+
+  .social-grid,
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-nav {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .zoom-prev {
+    left: 16px;
+  }
+
+  .zoom-next {
+    right: 16px;
+  }
+
+}
+
+/* ===================================================== */
+/* ===================== PROJECT COVER ================== */
+/* ===================================================== */
+
+.project-cover {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 32px auto;
+  display: block;
+  border-radius: 18px;
+}
+
+
+/* ===================================================== */
+/* ===================== GALLERY GRID =================== */
+/* ===================================================== */
+
+.gallery-grid {
+  column-count: 2;
+  column-gap: 18px;
+  max-width: 900px;
+  margin: 0 auto 48px auto;
+  padding: 0 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+
+/* ===================================================== */
+/* ======================= ZOOM MODAL =================== */
+/* ===================================================== */
+
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.zoom-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 18px;
+}
+
+
+/* ===================================================== */
+/* ===================== MODAL CLOSE BTN ================= */
+/* ===================================================== */
+
+.zoom-close {
+  position: absolute;
+  top: 28px;
+  right: 36px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* ===================================================== */
+/* ===================== MODAL NAVIGATION =============== */
+/* ===================================================== */
+
+.zoom-prev,
+.zoom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  user-select: none;
+}
+
+.zoom-prev {
+  left: 40px;
+}
+
+.zoom-next {
+  right: 40px;
+}
+
+
+/* ===================================================== */
+/* =================== PROJECT NAV LINKS ================= */
+/* ===================================================== */
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 520px;
+  margin: 0 auto 32px auto;
+  padding: 0 12px;
+}
+
+.project-nav a {
+  text-decoration: none;
+  font-family: 'Agdasima', sans-serif;
+  font-size: 0.9rem;
+  color: #00ffcc;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.project-nav a:hover {
+  opacity: 0.7;
+}
+
+
+/* ===================================================== */
+/* ======================== GABS ======================== */
+/* ===================================================== */
+
+.gabs-container {
+  max-width: 520px;
+  margin: 0 auto 36px auto;
+  padding: 0 12px;
+  text-align: center;
+}
+
+
+/* ===================================================== */
+/* ====================== RESPONSIVE ==================== */
+/* ===================================================== */
+
+
+/* -------------------- 1200px -------------------- */
+
+@media (max-width: 1200px) {
+
+  .right-panel {
+    width: 45vh;
+  }
+
+}
+
+
+/* -------------------- 1024px -------------------- */
+
+@media (max-width: 1024px) {
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .gallery-grid {
+    column-count: 1;
+  }
+
+}
+
+
+/* -------------------- 768px -------------------- */
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    padding: 0 1.2rem;
+  }
+
+  .right-panel {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-panel {
+    padding: 1.5rem 0;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .desc,
+  .desc-gabs,
+  .desc-final {
+    font-size: 0.78rem;
+  }
+
+  .social-grid,
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-nav {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .zoom-prev {
+    left: 16px;
+  }
+
+  .zoom-next {
+    right: 16px;
+  }
+
+}
