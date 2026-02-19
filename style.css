@@ -345,266 +345,6 @@ body, html {
     box-sizing: border-box;
 }
 
-/* ================================================= */
-/* ============ REGRAS DE RESPONSIVIDADE =========== */
-/* ================================================= */
-
-/* Para tablets e desktops menores (até 1200px) */
-@media (max-width: 1200px) {
-    #whatsapp-link {
-        position: fixed;
-  bottom: 20px;
-  left: 20px; /* valor seguro que não empurra pra fora */
-  z-index: 1000;
-  display: block;
-  text-decoration: none;
-    }
-
-	body {
-       background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
- 
-}
-
-    .project-subtitle {
-       display: none !important;
-  }
-
-}
-
-.page-wrapper {
-  flex: 1 0 auto; /* ocupa todo o espaço restante acima do footer */
-  display: flex;
-  flex-direction: column;
-}
-
-.lang-switcher {
-    position: static;
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-
-.footer {
-	width: 100%;
-	margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-  }
-
-  .footer-content {
-    font-size: 0.75rem;
-    flex-direction: column;
-    padding: 0px 20px;
-    text-align: center;
-  }
-
-/* Para tablets em modo retrato e dispositivos menores (até 1024px) */
-@media (max-width: 1024px) {
-    .container {
-        /* Altera a direção para empilhar os painéis verticalmente */
-        flex-direction: column;
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
-        padding: 0; /* Remove o padding lateral para aproveitar a tela toda */
-        margin-top: 60px;
-    }
-
-     #whatsapp-link {
-        position: fixed; 
-        display: block;
-        bottom: 10%;    /* 20 pixels da parte inferior [8] */
-        left: 80%;    /* 20 pixels da parte direita [8] */
-    }
-
-	body {
-        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
-    
-}
-
-.lang-switcher {
-    position: static;
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-
-  .footer-content {
-    font-size: 0.75rem;
-    flex-direction: column;
-    padding: 8px 10px;
-    text-align: center;
-  }
-
-  .footer {
-	width: 100%;
-	margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-  }
-
-
-    .header {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    box-sizing: border-box;
-}
-
-
-    .left-panel, .right-panel {
-        width: 100%; /* Faz com que cada painel ocupe a largura total */
-        height: auto; /* Altura automática para se ajustar ao conteúdo */
-        min-height: 50vh; /* Garante uma altura mínima para cada painel */
-        overflow-y: auto; /* Permite rolagem se necessário */
-        
-    }
-
-    .right-panel {
-        /* Ajusta a altura do painel de vídeo para manter a proporção */
-        height: 56.25vw; /* Proporção de 16:9 */
-        min-height: auto; /* Remove a altura mínima anterior */
-    }
-
-    .left-panel {
-        padding: 2rem; /* Mantém um espaçamento interno */
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .logo-img {
-        transform: hidden; /* Reduz um pouco o zoom do logo */
-        margin-top: 20px;
-        box-sizing: border-box;
-        position: relative;
-        z-index: 1;
-		pointer-events: none;
-       -webkit-user-select: none;
-       -khtml-user-select: none;
-       -moz-user-select: none;
-       -ms-user-select: none;
-       user-select: none;
-    }
-
-    .project-grid {
-        /* Permite que o grid se ajuste melhor em telas de tablet */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 0 2rem;
-    }
-
-    .authorial-link, .home-link, .comercial-link, .photography-link, .jobs-link, .gabs-link, .dev-link, .project-lab-link, .work-link {
-        color: #fff;
-        background: none; /* Muda a cor para melhor contraste em fundos claros */
-    }
-
-    .authorial-link:hover, .home-link:hover, .comercial-link:hover, .photography-link:hover, .jobs-link:hover, .gabs-link:hover, .dev-link:hover, .project-lab-link:hover, .work-link:hover {
-        color: #00ffcc; /* Mantém o hover consistente */
-    }
-
-	 .project-subtitle {
-        display: none !important;
-  }
-}
-
-/* Para celulares (até 768px) */
-@media (max-width: 768px) {
-	body {
-        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
-    
-}
-
-     #whatsapp-link {
-        position: fixed;
-  bottom: 20px;
-  left: 20px; /* valor seguro que não empurra pra fora */
-  z-index: 1000;
-  display: block;
-  text-decoration: none; 
-    }
-
-	 .gabs-link {
-    font-size: 0.95em;   /* reduz levemente o tamanho */
-    letter-spacing: 0.5px; /* mantém boa leitura */
-    line-height: 1.2;    /* ajusta espaçamento vertical */
-  }
-
-    .header {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    box-sizing: border-box;
-}
-
-
-    .left-panel {
-        padding: 1.5rem 1rem; /* Reduz o padding para telas pequenas */
-        min-height: 0;
-        align-content: stretch;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-		width: 100%;
-    }
-
-    .right-panel {
-        /* O painel de vídeo é escondido para focar no conteúdo principal
-           e economizar espaço vertical em telas muito pequenas. */
-        display: none;
-    }
-
-    .logo-img {
-       display: block;
-       z-index: 20;
-       position: relative; /* Esconde o logo em telas pequenas */
-	   pointer-events: none;
-    }
-
-    .subtitle {
-        font-size: 1.8rem; /* Reduz o tamanho da fonte do subtítulo */
-    }
-
-    .desc, .desc-gabs, .desc-final {
-        font-size: 0.8rem; /* Reduz o tamanho da fonte das descrições */
-    }
-
-    .button-grid, .social-grid {
-        /* Muda os grids de botões para uma única coluna */
-        grid-template-columns: 1fr;
-        width: 100%;
-        max-width: 180px; /* Limita a largura máxima */
-    }
-
-    .project-grid {
-        /* Garante que o grid de projetos seja de uma coluna */
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-        gap: 16px;
-		pointer-events: auto;
-    }
-
-    #whatsapp-link {
-        width: 50px;
-        height: 50px;
-        right: 15px;
-        bottom: 15px;
-    }
-
-
-	 .project-subtitle {
-        display: none !important;
-  }
-}
-
 .footer-content {
     background-color: #00ffcc;
     padding: 12px 0;
@@ -1111,6 +851,269 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
+
+/* ================================================= */
+/* ============ REGRAS DE RESPONSIVIDADE =========== */
+/* ================================================= */
+
+/* Para tablets e desktops menores (até 1200px) */
+@media (max-width: 1200px) {
+    #whatsapp-link {
+        position: fixed;
+  bottom: 20px;
+  left: 20px; /* valor seguro que não empurra pra fora */
+  z-index: 1000;
+  display: block;
+  text-decoration: none;
+    }
+
+	body {
+       background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+ 
+}
+
+    .project-subtitle {
+       display: none !important;
+  }
+
+}
+
+.page-wrapper {
+  flex: 1 0 auto; /* ocupa todo o espaço restante acima do footer */
+  display: flex;
+  flex-direction: column;
+}
+
+.lang-switcher {
+    position: static;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+.footer {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  .footer-content {
+    font-size: 0.75rem;
+    flex-direction: column;
+    padding: 0px 20px;
+    text-align: center;
+  }
+
+/* Para tablets em modo retrato e dispositivos menores (até 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        /* Altera a direção para empilhar os painéis verticalmente */
+        flex-direction: column;
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        padding: 0; /* Remove o padding lateral para aproveitar a tela toda */
+        margin-top: 60px;
+    }
+
+     #whatsapp-link {
+        position: fixed; 
+        display: block;
+        bottom: 10%;    /* 20 pixels da parte inferior [8] */
+        left: 80%;    /* 20 pixels da parte direita [8] */
+    }
+
+	body {
+        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+    
+}
+
+.lang-switcher {
+    position: static;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .footer-content {
+    font-size: 0.75rem;
+    flex-direction: column;
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  .footer {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+
+    .header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+
+    .left-panel, .right-panel {
+        width: 100%; /* Faz com que cada painel ocupe a largura total */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        min-height: 50vh; /* Garante uma altura mínima para cada painel */
+        overflow-y: auto; /* Permite rolagem se necessário */
+        
+    }
+
+    .right-panel {
+        /* Ajusta a altura do painel de vídeo para manter a proporção */
+        height: 56.25vw; /* Proporção de 16:9 */
+        min-height: auto; /* Remove a altura mínima anterior */
+    }
+
+    .left-panel {
+        padding: 2rem; /* Mantém um espaçamento interno */
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .logo-img {
+        transform: hidden; /* Reduz um pouco o zoom do logo */
+        margin-top: 20px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+		pointer-events: none;
+       -webkit-user-select: none;
+       -khtml-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+    }
+
+    .project-grid {
+        /* Permite que o grid se ajuste melhor em telas de tablet */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0 2rem;
+    }
+
+    .authorial-link, .home-link, .comercial-link, .photography-link, .jobs-link, .gabs-link, .dev-link, .project-lab-link, .work-link {
+        color: #fff;
+        background: none; /* Muda a cor para melhor contraste em fundos claros */
+    }
+
+    .authorial-link:hover, .home-link:hover, .comercial-link:hover, .photography-link:hover, .jobs-link:hover, .gabs-link:hover, .dev-link:hover, .project-lab-link:hover, .work-link:hover {
+        color: #00ffcc; /* Mantém o hover consistente */
+    }
+
+	 .project-subtitle {
+        display: none !important;
+  }
+}
+
+/* Para celulares (até 768px) */
+@media (max-width: 768px) {
+	body {
+        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+    
+}
+
+     #whatsapp-link {
+        position: fixed;
+  bottom: 20px;
+  left: 20px; /* valor seguro que não empurra pra fora */
+  z-index: 1000;
+  display: block;
+  text-decoration: none; 
+    }
+
+	 .gabs-link {
+    font-size: 0.95em;   /* reduz levemente o tamanho */
+    letter-spacing: 0.5px; /* mantém boa leitura */
+    line-height: 1.2;    /* ajusta espaçamento vertical */
+  }
+
+    .header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+
+    .left-panel {
+        padding: 1.5rem 1rem; /* Reduz o padding para telas pequenas */
+        min-height: 0;
+        align-content: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+		width: 100%;
+    }
+
+    .right-panel {
+        /* O painel de vídeo é escondido para focar no conteúdo principal
+           e economizar espaço vertical em telas muito pequenas. */
+        display: none;
+    }
+
+    .logo-img {
+       display: block;
+       z-index: 20;
+       position: relative; /* Esconde o logo em telas pequenas */
+	   pointer-events: none;
+    }
+
+    .subtitle {
+        font-size: 1.8rem; /* Reduz o tamanho da fonte do subtítulo */
+    }
+
+    .desc, .desc-gabs, .desc-final {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte das descrições */
+    }
+
+    .button-grid, .social-grid {
+        /* Muda os grids de botões para uma única coluna */
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 180px; /* Limita a largura máxima */
+    }
+
+    .project-grid {
+        /* Garante que o grid de projetos seja de uma coluna */
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 16px;
+		pointer-events: auto;
+    }
+
+    #whatsapp-link {
+        width: 50px;
+        height: 50px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+
+	 .project-subtitle {
+        display: none !important;
+  }
+}
+
+
 
 
 
