@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <body class="content-page">
 <header>
 <div class="lang-switcher">
-<button data-lang="pt-BR">Português</button>
+<button data-lang="pt">Português</button>
 <button data-lang="en">English</button>
 <button data-lang="es">Español</button>
 </div>
@@ -51,8 +51,8 @@ Aqui, cada criação é resultado de observação, expressão e intenção — u
 i18next
   .use(i18nextHttpBackend)
   .init({
-    lng: 'pt-BR', // idioma inicial fixo
-    fallbackLng: 'pt-BR',
+    lng: 'pt', // idioma inicial fixo
+    fallbackLng: 'pt',
     debug: true, // temporário para diagnóstico
     backend: {
       loadPath: 'idiomas/{{lng}}/translation.json'
@@ -90,6 +90,7 @@ document.querySelectorAll('[data-lang]').forEach(btn => {
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank" class="footer-link">Gabriel Carlos de Souza</a></p>
 </div></footer>
 </html>
+
 
 
 
