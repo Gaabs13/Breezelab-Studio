@@ -48,18 +48,6 @@ Aqui, cada criação é resultado de observação, expressão e intenção — u
 <script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
 
 <script>
-i18next
-  .use(i18nextHttpBackend)
-  .init({
-    lng: 'pt', // idioma inicial fixo
-    fallbackLng: 'pt',
-    debug: true, // temporário para diagnóstico
-    backend: {
-      loadPath: 'idiomas/{{lng}}/translation.json'
-    },
-    interpolation: { escapeValue: false }
-  });
-
 function updateContent() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -67,7 +55,21 @@ function updateContent() {
   });
 }
 
-i18next.on('loaded', updateContent);
+i18next
+  .use(i18nextHttpBackend)
+  .init({
+    lng: 'pt',
+    fallbackLng: 'pt',
+    load: 'currentOnly',
+    debug: true,
+    backend: {
+      loadPath: 'idiomas/{{lng}}/translation.json'
+    },
+    interpolation: { escapeValue: false }
+  }, function() {
+      updateContent(); // 🔥 executa após carregar
+  });
+
 i18next.on('languageChanged', updateContent);
 
 document.querySelectorAll('[data-lang]').forEach(btn => {
@@ -90,6 +92,7 @@ document.querySelectorAll('[data-lang]').forEach(btn => {
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank" class="footer-link">Gabriel Carlos de Souza</a></p>
 </div></footer>
 </html>
+
 
 
 
