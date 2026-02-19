@@ -46,17 +46,17 @@ Aqui, cada criação é resultado de observação, expressão e intenção — u
 
 <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
 <script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
-<script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 
 <script>
 i18next
   .use(i18nextHttpBackend)
-  .use(i18nextBrowserLanguageDetector)
   .init({
+    lng: 'pt-BR', // idioma inicial fixo
+    fallbackLng: 'pt-BR',
+    debug: true, // temporário para diagnóstico
     backend: {
       loadPath: 'idiomas/{{lng}}/translation.json'
     },
-    fallbackLng: 'pt-BR',
     interpolation: { escapeValue: false }
   });
 
@@ -67,7 +67,6 @@ function updateContent() {
   });
 }
 
-i18next.on('initialized', updateContent);
 i18next.on('loaded', updateContent);
 i18next.on('languageChanged', updateContent);
 
@@ -91,6 +90,7 @@ document.querySelectorAll('[data-lang]').forEach(btn => {
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank" class="footer-link">Gabriel Carlos de Souza</a></p>
 </div></footer>
 </html>
+
 
 
 
