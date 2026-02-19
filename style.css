@@ -127,6 +127,7 @@ body::after {
     font-size: 0.83rem;
     line-height: 1.6;
     color: #fff;
+	font-weight: bold;
 }
 
 .desc-gabs {
@@ -1110,6 +1111,7 @@ color: #000;
 #close-zoom:hover {
   color: #00ffcc;
 }
+
 
 
 
