@@ -1128,7 +1128,7 @@ color: #000;
         box-sizing: border-box;
     }
 
-    .project-grid {
+    .project-grid, .gallery-list, .gallery-list-projects {
         grid-template-columns: 1fr;
         gap: 16px;
         margin: 36px auto 0 auto;
@@ -1150,6 +1150,7 @@ color: #000;
     }
 
 }
+
 
 
 
