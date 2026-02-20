@@ -1027,108 +1027,118 @@ color: #000;
   }
 }
 
-/* Para celulares (até 768px) */
+/* ==========================================
+   MOBILE OTIMIZADO – até 768px
+   Estável para iOS / Android modernos
+========================================== */
 @media (max-width: 768px) {
-    
-	html, body {
-    margin: 0;
-    padding: 0;
-}
-	
-	.container {
-        flex: 1; /* height: auto; Permite que a altura se ajuste ao conteúdo */
+
+    /* RESET BASE */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        overflow-x: hidden;
     }
 
-    body.content-page {
-        min-height: 100svh;
+    /* VIEWPORT CORRETO */
+    body {
+        min-height: 100vh;
+        min-height: 100svh; /* prioridade para navegadores modernos */
+        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg')
+                    center center / cover no-repeat;
     }
 
-	body {
-     background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat;
-   }
-
-     #whatsapp-link {
-     position: fixed;
-     bottom: 15px;
-     left: 15px; /* valor seguro que não empurra pra fora */
-     z-index: 1000;
-     display: block;
-     text-decoration: none; 
+    /* CONTAINER FLEX (se existir) */
+    .container {
+        flex: 1;
     }
 
-	 .gabs-link {
-    font-size: 0.95em;   /* reduz levemente o tamanho */
-    letter-spacing: 0.5px; /* mantém boa leitura */
-    line-height: 1.2;    /* ajusta espaçamento vertical */
-  }
+    /* WHATSAPP FIXO */
+    #whatsapp-link {
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        z-index: 1000;
+        display: block;
+        text-decoration: none;
+    }
 
+    /* HEADER */
     .header {
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    box-sizing: border-box;
-}
-
-
-    .left-panel {
-        padding: 1.5rem 1rem; /* Reduz o padding para telas pequenas */
-        min-height: 0;
-        align-content: stretch;
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 5;
+        box-sizing: border-box;
+    }
+
+    /* PAINÉIS */
+    .left-panel {
+        padding: 1.5rem 1rem;
+        min-height: 0;
+        display: flex;
         flex-direction: column;
-		width: 100%;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .right-panel {
-        /* O painel de vídeo é escondido para focar no conteúdo principal
-           e economizar espaço vertical em telas muito pequenas. */
         display: none;
     }
 
-    .logo-img {
-       display: block;
-       z-index: 20;
-       position: relative; /* Esconde o logo em telas pequenas */
-	   pointer-events: none;
+    /* TIPOGRAFIA */
+    .gabs-link {
+        font-size: 0.95em;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
     }
 
     .subtitle {
-        font-size: 1.8rem; /* Reduz o tamanho da fonte do subtítulo */
+        font-size: 1.8rem;
     }
 
-    .desc, .desc-gabs, .desc-final {
-        font-size: 0.8rem; /* Reduz o tamanho da fonte das descrições */
+    .desc,
+    .desc-gabs,
+    .desc-final {
+        font-size: 0.8rem;
     }
 
-    .button-grid, .social-grid {
-        /* Muda os grids de botões para uma única coluna */
+    .logo-img {
+        display: block;
+        position: relative;
+        z-index: 20;
+        pointer-events: none;
+    }
+
+    /* GRIDS */
+    .button-grid,
+    .social-grid {
         grid-template-columns: 1fr;
         width: 100%;
-        max-width: 180px; /* Limita a largura máxima */
+        max-width: 180px;
     }
 
     .project-grid {
-        /* Garante que o grid de projetos seja de uma coluna */
         grid-template-columns: 1fr;
-        padding: 0;
         gap: 16px;
-		pointer-events: auto;
-		margin: 36px auto 0 auto;
-        padding-bottom: 0;
+        padding: 0;
+        margin: 36px auto 0 auto;
     }
 
-
-	 .project-subtitle {
+    .project-subtitle {
         display: none !important;
-  }
-	footer {
-        width: 105%;
-		margin-top: 0;
     }
+
+    /* FOOTER CORRETO (SEM 105%) */
+    footer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
 
