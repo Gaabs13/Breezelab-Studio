@@ -24,13 +24,12 @@
 <a href="jobs.html" class="jobs-link">Jobs & Partnerships</a>
 </div>
 </header>
-<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img">
 <div class="page-desc">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img">	
 <h2 class="subtitle" data-i18n="project-title-dreamfit-project">Projeto: Dreamsfit</h2>
 <p class="desc" data-i18n="project-subtitle-dreamfit-project">A DreamsFit nasceu para promover bem-estar com leveza, intenção e evolução constante. Sua identidade visual — a capivara meditativa sobre a Nuvem Voadora (Kintoun), representada em tons amarelados — traduz equilíbrio, pureza e positividade. Essa mesma filosofia reflete-se nos produtos: Multicolágeno, Luatonina, DreamsCoffee e Greemy; desenvolvidos para cuidar do corpo e da mente de forma natural e funcional, alinhados ao propósito de uma rotina mais consciente, sem perder a leveza e o bem-estar.</p>
 </div>
-<div class="gallery-list">
-	<div class="gallery-grid-projects">	
+<section class="project-grid">
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761743804/01_bclwtu.png" alt="Ilustração 01" class="gallery-img" loading="lazy">
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761743804/02_z9crxm.png" alt="Ilustração 02" class="gallery-img" loading="lazy">
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759325631/03_lsamnh.mp4" alt="Ilustração 03" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
@@ -47,13 +46,7 @@
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759325629/12_tbjnih.mp4" alt="Ilustração 07" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759325634/greemy-sem-audio_exizyf.mp4" alt="Ilustração 07" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761743805/final_jh7lwb.png" alt="Ilustração Final" class="gallery-img" loading="lazy">
-<!-- Adicione mais imagens conforme necessário -->
-<!-- Se houver vídeo, descomente a linha abaixo e ajuste o nome do arquivo -->
-<!-- <div class="gallery-video">
-<video src="Assets/ilustracoes-vol-01/faladorvideo.mp4" controls style="width:100%;max-width:900px;border-radius:12px;box-shadow:0 2px 12px #0002;display:block;margin:0 auto;"></video>
-</div> -->
-</div>
-</div>
+</section>
 <!-- Modal de zoom -->
 <div class="zoom-modal" id="zoom-modal">
   <span class="close-btn" id="close-zoom">✖</span>
@@ -99,12 +92,13 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 (new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
 </script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
+<script src="gallery.js" defer></script>
 <footer>
 <div class="footer-content">
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
 </div>
 </footer>
-<script src="gallery.js" defer></script>
 </body>
 </html>
+
 
