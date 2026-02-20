@@ -1121,6 +1121,14 @@ color: #000;
         max-width: 180px;
     }
 
+	.page-desc {
+        width: 100%;
+        max-width: 1200px; /* mesmo valor do project-grid */
+        margin: 0 auto;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
     .project-grid {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -1143,6 +1151,7 @@ color: #000;
     }
 
 }
+
 
 
 
