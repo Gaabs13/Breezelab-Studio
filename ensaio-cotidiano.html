@@ -16,18 +16,24 @@
 <button data-lang="en">English</button>
 <button data-lang="es">Español</button>
 </div>
+<nav class="navbar">   
+<button class="menu-toggle" aria-label="Abrir menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
 <div class="nav-links">
-<a href="index.html" class="home-link">Home</a>
 <a href="authorial.html" class="authorial-link">Authorial Works</a>
 <a href="commercial.html" class="comercial-link">Commercial Works</a>
-<a href="photography.html" class="photography-link">Photography Works</a>
 <a href="jobs.html" class="jobs-link">Jobs & Partnerships</a>
 <a href="dev.html" class="dev-link">Front-End & Dev</a>
 <a href="projectlab.html" class="projectlab-link">Project Lab</a>
+<a href="photography.html" class="photography-link">←</a>
 </div>
+</nav>
 </header>
-<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img">
 <div class="page-desc">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img">
 <h2 class="subtitle" data-i18n="title-ensaio-cotidiano">Ensaio Cotidiano</h2>
 <p class="desc" data-i18n="subtitle-ensaio-cotidiano">Estudo fotográfico de edição e captura, realizado espontaneamente.<br> 
 Grato aos modelos e a oportunidade de estudo, foi uma experiência cotidiana devido 
@@ -89,13 +95,13 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 (new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
 </script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
+<script src="gallery.js" defer></script></body>
 <footer>
 <div class="footer-content">
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
 </div>
 </footer>
-<script src="gallery.js" defer></script></body>
 </body>
-
 </html>
+
 
