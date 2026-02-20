@@ -1111,7 +1111,16 @@ color: #000;
 	 .project-subtitle {
         display: none !important;
   }
+
+	  .footer {
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
 }
+
 
 
 
