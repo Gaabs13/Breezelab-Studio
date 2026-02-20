@@ -1120,7 +1120,7 @@ color: #000;
         max-width: 180px;
     }
 
-	.page-desc {
+	.page-desc, .gallery-list, .gallery-list-projects {
         width: 100%;
         max-width: 1200px; /* mesmo valor do project-grid */
         margin: 0 auto;
@@ -1128,7 +1128,7 @@ color: #000;
         box-sizing: border-box;
     }
 
-    .project-grid, .gallery-list, .gallery-list-projects {
+    .project-grid {
         grid-template-columns: 1fr;
         gap: 16px;
         margin: 36px auto 0 auto;
@@ -1150,6 +1150,7 @@ color: #000;
     }
 
 }
+
 
 
 
