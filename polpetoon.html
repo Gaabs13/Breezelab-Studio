@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 <title>Polpetoon | Breezelab</title>
 </head>
-<body>
+<body class="content-page">
 <header>
 <div class="lang-switcher">
 <button data-lang="pt">Português</button>
@@ -24,13 +24,12 @@
 <a href="jobs.html" class="jobs-link">Jobs & Partnerships</a>
 </div>
 </header>
-<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img ilustracoes-vol-01">
 <div class="page-desc">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img ilustracoes-vol-01">	
 <h2 class="subtitle" data-i18n="project-title-polpetoon-project">Projeto: Polpetoon</h2>
 <p class="desc" data-i18n="project-subtitle-polpetoon-project">Projeto de identidade visual aplicada. O trabalho incluiu a vetorização e digitalização do carimbo original da marca, garantindo sua fidelidade para aplicação em embalagens kraft utilizadas nas entregas. Também foi desenvolvido o cardápio digital, pensado para plataformas de delivery e redes sociais, com elementos gráficos alinhados à linguagem lúdica e artesanal da marca. A atuação se estendeu ao suporte na produção audiovisual para registro do produto e experiência de marca.</p>
 </div>
-<div class="gallery-list">
-	<div class="gallery-grid-projects">
+<section class="project-grid">
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759490389/01_qewba8.mp4" alt="Ilustração 01" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761744131/02_hpyxky.png" alt="Ilustração 02" class="gallery-img" loading="lazy">
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761744139/foto01_njp39h.jpg" alt="Ilustração 02" class="gallery-img" loading="lazy">
@@ -38,14 +37,7 @@
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761744141/foto03_nbpuh3.jpg" alt="Ilustração 04" class="gallery-img" loading="lazy">
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759490389/video_yhc1rj.mp4" alt="Ilustração 05" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759490390/final_wdpql2.mp4" alt="Ilustração 06" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
-<!-- Adicione mais imagens conforme necessário -->
-<!-- Se houver vídeo, descomente a linha abaixo e ajuste o nome do arquivo -->
-<!-- <div class="gallery-video">
-<video src="Assets/ilustracoes-vol-01/faladorvideo.mp4" controls style="width:100%;max-width:900px;border-radius:12px;box-shadow:0 2px 12px #0002;display:block;margin:0 auto;"></video>
-</div> -->
-</div>
-</div>
-<!-- Modal de zoom -->
+</section>
 <div class="zoom-modal" id="zoom-modal">
   <span class="close-btn" id="close-zoom">✖</span>
   <div id="zoomed-content"></div>
@@ -90,11 +82,12 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 (new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
 </script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
+<script src="gallery.js" defer></script>
 <footer>
 <div class="footer-content">
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
-</div></footer>
-<script src="gallery.js" defer></script>
+</div>
+</footer>
 </body>
-
 </html>
+
