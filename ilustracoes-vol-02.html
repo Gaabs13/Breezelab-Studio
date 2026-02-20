@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 <title>Ilustrações Vol 02 | Breezelab</title>
 </head>
-<body>
+<body class="content-page">
 <header>
 <div class="lang-switcher">
 <button data-lang="pt">Português</button>
@@ -32,6 +32,7 @@ diferentes nacionalidades e referências latinas que possuímos no cotidiano.
 Primeiro esboçados em papel, feito a mão, antes de ganharem forma no digital.<br>
 Espero que inspire!</p>
 </div>
+<section class="project-grid">
 <div class="gallery-list">
 <div class="gallery-grid-projects">
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759315012/01_qgy15z.mp4" alt="Ilustração 01" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
@@ -58,9 +59,11 @@ Espero que inspire!</p>
 <button class="prev-btn">‹</button>
 <button class="next-btn">›</button>
 </div>
+</a>
+</section>  
 <a href="https://wa.me/554888099378?text=Seja Bem vindo ao Breezelab! Fique a vontade para enviar uma mensagem!" class="whatsapp-link" id="whatsapp-link" target="_blank">
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg" alt="WhatsApp">
-</a>
+
 <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
 <script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
 <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
@@ -97,11 +100,12 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 (new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
 </script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
+<script src="gallery.js" defer></script>
 <footer>
 <div class="footer-content">
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
-</div></footer>
-<script src="gallery.js" defer></script>
+</div>
+</footer>
 </body>
-
 </html>
+
