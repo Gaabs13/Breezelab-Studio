@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 <title>Projeto em andamento: HeroEye | Breezelab</title>
 </head>
-<div>
+<body class="content-page">
 <header>
 <div class="lang-switcher">
 <button data-lang="pt">Português</button>
@@ -24,21 +24,19 @@
 <a href="jobs.html" class="jobs-link">Jobs & Partnerships</a>
 </div>
 </header>
-<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img ilustracoes-vol-01">
 <div class="page-desc">
+<img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img ilustracoes-vol-01">  
 <h2 class="subtitle" data-i18n="project-title-hero-eye">Projeto em andamento: HeroEye</h2>
 <p class="desc" data-i18n="project-subtitle-hero-eye">HeroEye está em constante desenvolvimento, com novas melhorias estruturais e visuais sendo implementadas progressivamente.
 Este é um projeto em evolução, construído com foco em arquitetura sólida, identidade consistente e escalabilidade.</p>
 </div>
-<div class="gallery-list">
-<div class="gallery-grid-projects">
+<section class="project-grid">
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1771269386/01_nrljcs.mp4" alt="Ilustração 01" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1771269404/02_dnjmgb.mp4" alt="Ilustração 02" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1771271111/03_s68m4x.mp4" alt="Ilustração 03" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1771269338/04_p0iewm.mp4" alt="Ilustração 04" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1771269407/05_lhwcae.mp4" alt="Ilustração 05" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
-</div>
-</div>
+</section>
 <!-- Modal de zoom -->
 <div class="zoom-modal" id="zoom-modal">
   <span class="close-btn" id="close-zoom">✖</span>
@@ -85,13 +83,14 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 (new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
 </script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
+<script src="gallery.js" defer></script>  
 <footer>
 <div class="footer-content">
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
-</div></footer>
-<script src="gallery.js" defer></script>
+</div>
+</footer>
 </body>
-
 </html>
+
 
 
