@@ -1027,14 +1027,17 @@ color: #000;
 	.container {
         /* Altera a direção para empilhar os painéis verticalmente */
         flex-direction: column;
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        flex: 1; /* height: auto; Permite que a altura se ajuste ao conteúdo */
         padding: 0; /* Remove o padding lateral para aproveitar a tela toda */
-        margin-top: 60px;
+        margin-top: 0px;
     }
 	
 	body {
-        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
-    
+     background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+     display: flex;
+     flex-direction: column;
+     min-height: 100dvh;
+	 padding-top: 60px;
 }
 
      #whatsapp-link {
@@ -1113,15 +1116,8 @@ color: #000;
 	 .project-subtitle {
         display: none !important;
   }
-
-	  .footer {
-	width: 100%;
-	margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-  }
 }
+
 
 
 
