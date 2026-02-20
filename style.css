@@ -1023,18 +1023,27 @@ color: #000;
 
 /* Para celulares (até 768px) */
 @media (max-width: 768px) {
+	 
+	.container {
+        /* Altera a direção para empilhar os painéis verticalmente */
+        flex-direction: column;
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        padding: 0; /* Remove o padding lateral para aproveitar a tela toda */
+        margin-top: 60px;
+    }
+	
 	body {
-        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat;
     
 }
 
      #whatsapp-link {
-        position: fixed;
-  bottom: 20px;
-  left: 20px; /* valor seguro que não empurra pra fora */
-  z-index: 1000;
-  display: block;
-  text-decoration: none; 
+     position: fixed;
+     bottom: 15px;
+     left: 15px; /* valor seguro que não empurra pra fora */
+     z-index: 1000;
+     display: block;
+     text-decoration: none; 
     }
 
 	 .gabs-link {
@@ -1100,13 +1109,6 @@ color: #000;
 		pointer-events: auto;
     }
 
-    #whatsapp-link {
-        width: 50px;
-        height: 50px;
-        right: 15px;
-        bottom: 15px;
-    }
-
 
 	 .project-subtitle {
         display: none !important;
@@ -1120,6 +1122,7 @@ color: #000;
     background: none;
   }
 }
+
 
 
 
