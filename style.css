@@ -135,6 +135,18 @@ body::after {
 	font-weight: bold;
 }
 
+.nav-link-gabs {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1em; /* espaçamento mínimo entre os links */
+    color:#fff;
+}
+
 .desc-gabs {
     font-size: 0.73rem; 
     font-weight: 600;
@@ -1210,6 +1222,7 @@ color: #000;
     }
 
 }
+
 
 
 
