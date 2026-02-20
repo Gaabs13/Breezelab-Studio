@@ -1128,7 +1128,8 @@ color: #000;
         box-sizing: border-box;
     }
 	
-     .gallery-img { 
+     .gallery-img {
+		grid-template-columns: 1fr; 
 	    gap: 16px;
         margin: 36px auto 0 auto;
 		width: 100%;
@@ -1159,6 +1160,7 @@ color: #000;
     }
 
 }
+
 
 
 
