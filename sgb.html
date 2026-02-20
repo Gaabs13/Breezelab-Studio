@@ -9,14 +9,13 @@
 <link rel="stylesheet" href="style.css">
 <title>Festival Social Good Brasil | Breezelab</title>
 </head>
-<body>
+<body class="content-page">
 <header>
 <div class="lang-switcher">
 <button data-lang="pt">Português</button>
 <button data-lang="en">English</button>
 <button data-lang="es">Español</button>
 </div>
-</header>
 <div class="nav-links">
 <a href="index.html" class="home-link">Home</a>
 <a href="authorial.html" class="authorial-link">Authorial Works</a>
@@ -24,6 +23,7 @@
 <a href="photography.html" class="photography-link">Photography Works</a>
 <a href="jobs.html" class="jobs-link">Jobs & Partnerships</a>
 </div>
+</header>	
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761741801/breezelablogo_ztqogd.png" alt="Breezelab Logo" class="logo-img">
 <div class="page-desc">
 <h2 class="subtitle" data-i18n="project-title-sgb">Festival Social Good Brasil</h2>
@@ -32,8 +32,7 @@ Reconhecida internacionalmente por sua liderança no Movimento +Social Good, em 
 A proposta visual deste projeto buscou traduzir os pilares da organização — inovação, ética, justiça social e tecnomanismo — por meio de peças estáticas e dinâmicas que dialogam com o futuro, com o humano e com o poder transformador da tecnologia.<br>
 </p>
 </div>
-<div class="gallery-list">
-	<div class="gallery-grid-projects">
+<section class="project-grid">
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761743394/01_ih7s41.png" alt="Ilustração 01" class="gallery-img" loading="lazy">
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761743395/02_vhaurz.png" alt="Ilustração 02" class="gallery-img" loading="lazy">
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761743395/03_rmbt2j.png" alt="Ilustração 03" class="gallery-img" loading="lazy">
@@ -42,13 +41,7 @@ A proposta visual deste projeto buscou traduzir os pilares da organização — 
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759325331/06_in8gjt.mp4" alt="Ilustração 04" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759325331/07_c2fh4n.mp4" alt="Ilustração 04" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <img src="https://res.cloudinary.com/breezelab/image/upload/v1761743394/08_we4y5q.png" alt="Ilustração 08" class="gallery-img" loading="lazy">
-<!-- Adicione mais imagens conforme necessário -->
-<!-- Se houver vídeo, descomente a linha abaixo e ajuste o nome do arquivo -->
-<!-- <div class="gallery-video">
-<video src="Assets/ilustracoes-vol-01/faladorvideo.mp4" controls style="width:100%;max-width:900px;border-radius:12px;box-shadow:0 2px 12px #0002;display:block;margin:0 auto;"></video>
-</div> -->
-    </div>
-</div>
+</section>
 <!-- Modal de zoom -->
 <div class="zoom-modal" id="zoom-modal">
   <span class="close-btn" id="close-zoom">✖</span>
@@ -95,12 +88,13 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 (new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
 </script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
+<script src="gallery.js" defer></script>
 <footer>
 <div class="footer-content">
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
 </div>
 </footer>
-<script src="gallery.js" defer></script>
 </body>
 </html>
+
 
