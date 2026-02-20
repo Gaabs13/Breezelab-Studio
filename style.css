@@ -430,7 +430,6 @@ body, html {
     max-width: auto; 
     margin: 36px auto 0 auto;
     padding: 0 0px;
-	box-sizing: border-box;
     background: transparent;
 	pointer-events: auto;
     -webkit-user-select: none;
@@ -1151,6 +1150,7 @@ color: #000;
     }
 
 }
+
 
 
 
