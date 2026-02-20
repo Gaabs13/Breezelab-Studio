@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 <title>A Peregrina da Verdade | Breezelab</title>
 </head>
-<body>
+<body class="content-page">
 <header>
 <div class="lang-switcher">
 <button data-lang="pt">Português</button>
@@ -29,8 +29,7 @@
 <h2 class="subtitle" data-i18n="project-title-a-peregrina-da-verdade">A Peregrina da Verdade</h2>
 <p class="desc" data-i18n="project-subtitle-a-peregrina-da-verdade">"Do Caos ao Transcendente"</p>
 </div>
-<div class="gallery-list">
-	<div class="gallery-grid-projects">
+<section class="project-grid">
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759321776/01_nbi4wu.mp4" alt="Ilustração 01" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759321775/02_ejfvwu.mp4" alt="Ilustração 02" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759321775/03_qrwyci.mp4" alt="Ilustração 03" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
@@ -40,13 +39,7 @@
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759321775/06_qks7wm.mp4" alt="Ilustração 07" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759321777/07_pxhoj2.mp4" alt="Ilustração 08" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
 <video src="https://res.cloudinary.com/breezelab/video/upload/v1759321776/08_qwwhcl.mp4" alt="Ilustração 09" class="gallery-img" autoplay loop muted playsinline preload="none"></video>
-<!-- Adicione mais imagens conforme necessário -->
-<!-- Se houver vídeo, descomente a linha abaixo e ajuste o nome do arquivo -->
-<!-- <div class="gallery-video">
-<video src="Assets/ilustracoes-vol-01/faladorvideo.mp4" controls style="width:100%;max-width:900px;border-radius:12px;box-shadow:0 2px 12px #0002;display:block;margin:0 auto;"></video>
-</div> -->
-</div>
-</div>
+</section>
 <!-- Modal de zoom -->
 <div class="zoom-modal" id="zoom-modal">
   <span class="close-btn" id="close-zoom">✖</span>
@@ -101,4 +94,5 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 <script src="gallery.js" defer></script>
 </body>
 </html>
+
 
