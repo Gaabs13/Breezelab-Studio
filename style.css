@@ -777,7 +777,7 @@ body, html {
 /* MENU */
 .nav-links {
     position: absolute;
-    top: 0;
+    top: 45px;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -809,7 +809,8 @@ body, html {
 
 /* HOVER */
 .nav-links a:hover {
-    color: #00796b;
+    color: #0be3ca;
+    text-shadow: 0 0 8px rgba(11, 227, 202, 0.6);
 }
 
 .authorial-link,
@@ -1233,6 +1234,7 @@ color: #000;
     }
 
 }
+
 
 
 
