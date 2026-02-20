@@ -1141,7 +1141,7 @@ color: #000;
     .project-grid {
         grid-template-columns: 1fr;
         gap: 16px;
-        margin: 36px auto 0 auto;
+        margin: 16px auto 0 auto;
 		width: 100%;
         max-width: 1200px; /* ou o valor que você usa no desktop */
         padding: 0 16px;
@@ -1160,6 +1160,7 @@ color: #000;
     }
 
 }
+
 
 
 
