@@ -92,6 +92,15 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 </script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
 <script src="gallery.js" defer></script>
+<script>
+const toggleButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+});
+</script>
 <footer>
 <div class="footer-content">
 <p>© 2025 Breezelab. Todos os direitos reservados. Desenvolvido por <a href="https://www.linkedin.com/in/gabrielc-souza/" target="_blank">Gabriel Carlos de Souza</a></p>
@@ -99,6 +108,7 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 </footer>
 </body>
 </html>
+
 
 
 
