@@ -114,6 +114,15 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 });
 });
 </script>
+<script>
+const toggleButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+});
+</script>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
 <footer>
 <div class="footer-content">
@@ -122,6 +131,7 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 </footer>
 </body>
 </html>
+
 
 
 
