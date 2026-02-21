@@ -92,6 +92,15 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 // Substitua 'URL_DA_IMAGEM_WHATSAPP' pelo caminho real da sua imagem
 (new Image()).src = "https://res.cloudinary.com/breezelab/image/upload/v1761741936/whats_dqw1ec.jpg"; // Pré-carrega a imagem [16]
 </script>
+<script>
+const toggleButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+});
+</script>
 </section>
 <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
 <footer>
@@ -100,7 +109,7 @@ i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 </div>
 </footer>
 </body>
-
 </html>
+
 
 
