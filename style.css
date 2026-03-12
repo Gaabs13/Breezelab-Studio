@@ -68,7 +68,25 @@ body::after {
 	flex: 1;
 	box-sizing: border-box; /* Garante que o padding não aumente a largura total */ 
 	padding: 0 4rem; /* Adiciona espaçamento lateral harmonico */ 
-	margin-top: 60px; }
+	margin-top: 60px;
+	.left-panel {
+    flex: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    overflow-y: visible; /* Permite rolagem se o conteúdo for maior */
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.left-panel > * {
+    position: relative;
+    z-index: 2;
+}
+}
 
 .left-panel {
     flex: 1;
@@ -293,7 +311,8 @@ body::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+	gap: 2rem;
+    padding: 1rem 2rem;  
 }
 
 .video-area {
@@ -1203,6 +1222,7 @@ color: #000;
     }
 
 }
+
 
 
 
