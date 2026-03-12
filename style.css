@@ -312,7 +312,8 @@ body::after {
     align-items: center;
     justify-content: center;
 	gap: 2rem;
-    padding: 1rem 2rem;  
+    padding: 1rem 2rem;
+	padding-botton: 0;
 }
 
 .video-area {
@@ -327,8 +328,8 @@ body::after {
 
 .video-area video {
     background: transparent;
-    width: 125%;
-    height: 125%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     border: none;
     outline: none;
@@ -1221,6 +1222,7 @@ color: #000;
     }
 
 }
+
 
 
 
