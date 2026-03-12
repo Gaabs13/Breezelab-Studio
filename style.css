@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    background: url('https://www.dropbox.com/scl/fi/5nwewv01st73ah8cykp7v/background.png?rlkey=22b3u9p6hywmrhlibl7yzrl1q&st=jyrkribq&dl=0') center center / cover no-repeat fixed;
+    background: url('F:\Arquivos - Breezelab\background.png') center center / cover no-repeat fixed;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1248,6 +1248,7 @@ color: #000;
     }
 
 }
+
 
 
 
