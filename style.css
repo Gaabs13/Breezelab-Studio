@@ -193,7 +193,7 @@ body::after {
     width: 80%;
     max-width: 300px; 
     margin-top: 0;
-    margin-bottom: 44px; /* espaço extra para separar do rodapé */
+    margin-bottom: 16px; /* espaço extra para separar do rodapé */
 }
 
 .menu-btn {
@@ -1203,6 +1203,7 @@ color: #000;
     }
 
 }
+
 
 
 
