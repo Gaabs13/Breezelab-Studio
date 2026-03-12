@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    background: url('F:\Arquivos - Breezelab\background.png') center center / cover no-repeat fixed;
+    background: url('https://github.com/Gaabs13/Breezelab-Studio/blob/main/Assets/background.png?raw=true') center center / cover no-repeat fixed;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1248,6 +1248,7 @@ color: #000;
     }
 
 }
+
 
 
 
