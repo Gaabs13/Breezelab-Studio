@@ -355,7 +355,7 @@ footer {
     padding: 0;
     border: none;
     background: none;
-	margin-top: 48px;
+	margin-top: auto;
 }
 
 /* Garante que o conteúdo principal não sobreponha o rodapé */
@@ -1249,6 +1249,7 @@ color: #000;
     }
 
 }
+
 
 
 
