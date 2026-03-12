@@ -19,6 +19,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+	height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 body::after {
@@ -349,12 +352,6 @@ footer {
 	margin-top: auto;
 }
 
-/* Garante que o conteúdo principal não sobreponha o rodapé */
-body, html {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
 
 .footer-content {
     background-color: #00ffcc;
@@ -1240,6 +1237,7 @@ color: #000;
     }
 
 }
+
 
 
 
