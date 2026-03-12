@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -57,11 +61,11 @@ body::after {
 
 .container {
 	display: flex; 
-	height: 100%; 
 	width: 100%; 
 	position: relative; 
 	z-index: 1; 
-	flex: 1 0 auto; 
+	flex: flex;
+	flex: 1;
 	box-sizing: border-box; /* Garante que o padding não aumente a largura total */ 
 	padding: 0 4rem; /* Adiciona espaçamento lateral harmonico */ 
 	margin-top: 60px; }
@@ -385,17 +389,6 @@ footer {
     padding: 0;
     border: none;
     background: none;
-}
-
-/* Garante que o conteúdo principal não sobreponha o rodapé */
-body, html {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 .home-link {
@@ -1235,6 +1228,7 @@ color: #000;
     }
 
 }
+
 
 
 
