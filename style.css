@@ -283,10 +283,8 @@ body::after {
         }
 
 .right-panel {
-    /* Define a largura do painel com base na proporção 9:16 do vídeo */
-    /* Cálculo: (9 / 16) * 100vh = 56.25vh */
     width: 56.25vh;
-    flex-shrink: 0; /* Impede que o painel encolha */
+    flex-shrink: 0;
     background: transparent;
     display: flex;
     align-items: center;
@@ -1237,6 +1235,7 @@ color: #000;
     }
 
 }
+
 
 
 
