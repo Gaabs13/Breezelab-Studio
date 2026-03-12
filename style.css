@@ -342,6 +342,11 @@ body::after {
     user-select: none;
 }
 
+.video-intro {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+}
 
 .footer-link :hover {
     color: #00796b;
@@ -1222,6 +1227,7 @@ color: #000;
     }
 
 }
+
 
 
 
