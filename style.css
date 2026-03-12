@@ -323,22 +323,6 @@ body::after {
     user-select: none;
 }
 
-.footer-content {
-    background-color: #00ffcc;
-    padding: 2px 6px;   /* controla o tamanho */
-    font-size: 0.7rem;
-    line-height: 1.2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-content a {
-    color: #000;
-    text-decoration: underline;
-    transition: color 0.2s;
-}
-
 
 .footer-link :hover {
     color: #00796b;
@@ -353,7 +337,6 @@ footer {
     background: none;
 	margin-top: auto;
 }
-
 
 .footer-content {
     background-color: #00ffcc;
@@ -381,14 +364,6 @@ footer {
 
 .footer-content p:hover {
     color: #00796b;
-}
-
-footer {
-    width: 100%;
-	margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
 }
 
 .home-link {
@@ -1228,6 +1203,7 @@ color: #000;
     }
 
 }
+
 
 
 
