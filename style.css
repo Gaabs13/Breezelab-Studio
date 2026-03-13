@@ -319,7 +319,7 @@ body::after {
 }
 
 .video-area {
-    width: 125%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: flex-end;
@@ -331,7 +331,7 @@ body::after {
 
 .video-area video {
     background: transparent;
-    width: 125%;
+    width: 100%;
     height: auto;
     object-fit: contain;
 	margin: 0;
@@ -1226,6 +1226,7 @@ color: #000;
     }
 
 }
+
 
 
 
