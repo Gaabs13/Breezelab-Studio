@@ -69,6 +69,8 @@ body::after {
 	box-sizing: border-box; /* Garante que o padding não aumente a largura total */ 
 	padding: 0 4rem; /* Adiciona espaçamento lateral harmonico */ 
 	margin-top: 60px;
+	}
+	
 	.left-panel {
     flex: 1;
     color: #fff;
@@ -85,7 +87,6 @@ body::after {
 .left-panel > * {
     position: relative;
     z-index: 2;
-}
 }
 
 .left-panel {
@@ -1222,6 +1223,7 @@ color: #000;
     }
 
 }
+
 
 
 
