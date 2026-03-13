@@ -309,7 +309,7 @@ body::after {
     flex-shrink: 0;
     background: transparent;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 	gap: 2rem;
     padding: 1rem 2rem;
@@ -1222,6 +1222,7 @@ color: #000;
     }
 
 }
+
 
 
 
