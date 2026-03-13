@@ -13,6 +13,7 @@
 
 html {
     height: 100%;
+	margin: 0;
 }
 
 body {
@@ -312,7 +313,7 @@ body::after {
     align-items: flex-end;
     justify-content: center;
 	gap: 0rem;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
 	padding-botton: 0;
 }
 
@@ -1222,6 +1223,7 @@ color: #000;
     }
 
 }
+
 
 
 
