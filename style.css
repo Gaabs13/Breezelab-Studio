@@ -914,7 +914,7 @@ color: #000;
     }
 
 	body {
-       background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+       background: url('Assets/background.png') center center / cover no-repeat fixed;
  
 }
 
@@ -971,7 +971,7 @@ color: #000;
     }
 
 	body {
-        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg') center center / cover no-repeat fixed;
+        background: url('Assets/background.png') center center / cover no-repeat fixed;
     
 }
 
@@ -1084,7 +1084,7 @@ color: #000;
     body {
         min-height: 100vh;
         min-height: 100svh; /* prioridade para navegadores modernos */
-        background: url('https://res.cloudinary.com/breezelab/image/upload/v1761741740/background_bqcfu8.jpg')
+        background: url('Assets/background.png')
                     center center / cover no-repeat;
     }
 
@@ -1226,6 +1226,7 @@ color: #000;
     }
 
 }
+
 
 
 
