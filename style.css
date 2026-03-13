@@ -315,6 +315,7 @@ body::after {
 	gap: 0rem;
     padding: 0rem 2rem;
 	padding-botton: 0;
+	margin: 0;
 }
 
 .video-area {
@@ -325,6 +326,7 @@ body::after {
     justify-content: center;
     background: transparent;
     overflow: hidden;
+	margin: 0;
 }
 
 .video-area video {
@@ -332,6 +334,7 @@ body::after {
     width: 125%;
     height: auto;
     object-fit: contain;
+	margin: 0;
     border: none;
     outline: none;
     display: block;
@@ -355,7 +358,7 @@ footer {
     padding: 0;
     border: none;
     background: none;
-	margin-top: auto;
+	margin-top: 0;
 }
 
 .footer-content {
@@ -1223,6 +1226,7 @@ color: #000;
     }
 
 }
+
 
 
 
