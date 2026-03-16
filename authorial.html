@@ -95,6 +95,9 @@ Aonde Pretendes Chegar com Tanto Descaso?"</span>
 </section>
 <a href="https://wa.me/554888099378?text=Seja Bem vindo ao Breezelab! Fique a vontade para enviar uma mensagem!" class="whatsapp-link" id="whatsapp-link" target="_blank">
 <img src="Assets/whats.jpg" alt="WhatsApp">
+<script>
+(new Image()).src = "Assets/whats.jpg"; // Pré-carrega a imagem [16]
+</script>
 </a>
 <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
 <script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
@@ -126,9 +129,6 @@ btn.addEventListener('click', () => {
 i18next.changeLanguage(btn.getAttribute('data-lang'), updateContent);
 });
 });
-</script>
-<script>
-(new Image()).src = "Assets/whats.jpg"; // Pré-carrega a imagem [16]
 </script>
 <script>
 const toggleButton = document.querySelector('.menu-toggle');
