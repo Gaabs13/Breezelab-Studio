@@ -41,13 +41,13 @@ body::after {
     pointer-events: none; /* Não bloqueia os botões */
 }
 
-.header {
-    display: flex;
-    align-items: flex-end;
-    position: fixed;
+header {
+    position: absolute;
     top: 0;
     width: 100%;
-    z-index: 10;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .lang-switcher {
@@ -69,26 +69,10 @@ body::after {
 	box-sizing: border-box; /* Garante que o padding não aumente a largura total */ 
 	padding: 0 4rem; /* Adiciona espaçamento lateral harmonico */ 
 	margin-top: 0px;
+	height: 100vh; 
+    overflow: hidden; 
 	}
 	
-	.left-panel {
-    flex: 1;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    overflow-y: visible; /* Permite rolagem se o conteúdo for maior */
-    padding: 2rem;
-    box-sizing: border-box;
-}
-
-.left-panel > * {
-    position: relative;
-    z-index: 2;
-}
-
 .left-panel {
     flex: 1;
     color: #fff;
@@ -97,7 +81,7 @@ body::after {
     align-items: center;
     position: relative;
     height: 100%;
-    overflow-y: visible; /* Permite rolagem se o conteúdo for maior */
+    overflow-y: visible;
     padding: 2rem;
     box-sizing: border-box;
 }
@@ -327,13 +311,15 @@ body::after {
     background: transparent;
     overflow: hidden;
 	margin: 0;
+	object-fit: cover;
+	position: relative;
 }
 
 .video-area video {
     background: transparent;
     width: 115%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 	margin: 0;
     border: none;
     outline: none;
@@ -345,6 +331,17 @@ body::after {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.video-area::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65); /* overlay */
+    transition: 0.6s ease;
+}
+
+.container:hover .video-area::after {
+    background: rgba(0,0,0,0.2); /* revela vídeo */
 }
 
 .footer-link :hover {
@@ -448,7 +445,7 @@ footer {
 
 .page-desc {
     width: 100%;
-    max-width: 520px;
+    max-width: 480px;
     margin: 0 auto 24px auto;
     text-align: center;
     padding: 0 10px;
@@ -902,10 +899,29 @@ color: #000;
 /* ============ REGRAS DE RESPONSIVIDADE =========== */
 /* ================================================= */
 
+@media (min-width: 1025px) {
+  .container {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .left-panel,
+  .right-panel {
+    height: 100%;
+  }
+}
+
 /* Para tablets e desktops menores (até 1200px) */
 @media (max-width: 1200px) {
-    #whatsapp-link {
-        position: fixed;
+
+ .container {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+#whatsapp-link {
+  position: fixed;
   bottom: 20px;
   left: 20px; /* valor seguro que não empurra pra fora */
   z-index: 1000;
