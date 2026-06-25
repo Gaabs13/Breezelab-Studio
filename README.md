@@ -13,11 +13,11 @@ Seu propósito não é demonstrar complexidade excessiva, mas evidenciar clareza
 
 Desenvolver uma aplicação web responsiva capaz de:
 
-Traduzir uma identidade visual autoral para o ambiente digital;
-Oferecer uma experiência consistente em diferentes dispositivos e resoluções;
-Integrar conteúdos multimídia, como imagens e vídeos;
-Aplicar boas práticas de organização e estruturação front-end;
-Servir como base para futuras evoluções e experimentações.
+**Traduzir uma identidade visual autoral para o ambiente digital** <br>
+Oferecer uma experiência consistente em diferentes dispositivos e resoluções <br>
+**Integrar conteúdos multimídia, como imagens e vídeos** <br>
+Aplicar boas práticas de organização e estruturação Front-End <br>
+**Servir como base para futuras evoluções e experimentações** <br>
 
 Além de funcionar como um portfólio pessoal, o projeto estabelece uma conexão entre design e desenvolvimento, adotando uma visão orientada à construção de produtos digitais.
 
@@ -25,11 +25,11 @@ Além de funcionar como um portfólio pessoal, o projeto estabelece uma conexão
 
 **📖 O site foi desenvolvido utilizando tecnologias fundamentais da web moderna, priorizando:**
 
-Responsividade;
-Hierarquia visual;
-Legibilidade;
-Performance;
-Experiência do usuário.
+Responsividade <br>
+**Hierarquia visual** <br>
+Legibilidade <br>
+**Performance** <br>
+Experiência do usuário <br>
 
 Todo o processo de concepção foi inicialmente estruturado no **Figma**, permitindo validar decisões visuais, fluxos e adaptações responsivas antes da implementação em código.
 
@@ -71,11 +71,11 @@ Revisões de interface, ajustes de código, otimizações e melhorias incrementa
 
 A versão atual representa a base inicial da proposta e continuará recebendo melhorias, incluindo:
 
-Reestruturação e modularização do CSS;
-Expansão das funcionalidades em JavaScript;
-Migração gradual para React;
-Integração de recursos mais próximos de um produto digital completo;
-Aprimoramento da arquitetura e da experiência geral.
+**Reestruturação e modularização do CSS** <br>
+Expansão das funcionalidades em JavaScript <br>
+**Migração gradual para React** <br>
+Integração de recursos mais próximos de um produto digital completo <br>
+**Aprimoramento da arquitetura e da experiência geral** <br>
 
 O esboço na versão **1.0**: <br>
 https://techgabs.vercel.app/
