@@ -77,10 +77,10 @@ Migração gradual para React;
 Integração de recursos mais próximos de um produto digital completo;
 Aprimoramento da arquitetura e da experiência geral.
 
-• O esboço na versão **1.0**: 
+O esboço na versão **1.0**: <br>
 https://techgabs.vercel.app/
 
-• Uma evolução deste projeto já pode ser acessada na versão **2.0**:
+Uma evolução deste projeto já pode ser acessada na versão **2.0**: <br>
 https://breezelabportfolio.vercel.app/
 
 
