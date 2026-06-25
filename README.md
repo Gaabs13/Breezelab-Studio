@@ -1,6 +1,6 @@
-# 🌬️ Breezelab Studio — v1.0
+<div align="center">
 
-## 🚀 Sobre o Projeto
+# 🌬️ Breezelab Studio — v1.0
 
 Este repositório reúne a primeira versão do portfólio digital desenvolvido sob a identidade do **Breezelab**, um laboratório criativo onde design, cultura e tecnologia convergem para transformar ideias em experiências digitais.
 
@@ -95,4 +95,4 @@ Este projeto não foi criado para demonstrar complexidade técnica isoladamente 
 > **Boas experiências nascem da combinação entre clareza, propósito e evolução constante.**
 
 
-
+</div>
