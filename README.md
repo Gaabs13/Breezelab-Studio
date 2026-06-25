@@ -75,14 +75,14 @@ Revisões de interface, ajustes de código, otimizações e melhorias incrementa
 
 A versão atual representa a base inicial da proposta e continuará recebendo melhorias, incluindo:
 
-• O esboço na versão **1.0**: 
-https://techgabs.vercel.app/
-
 * Reestruturação e modularização do CSS;
 * Expansão das funcionalidades em JavaScript;
 * Migração gradual para React;
 * Integração de recursos mais próximos de um produto digital completo;
 * Aprimoramento da arquitetura e da experiência geral.
+
+• O esboço na versão **1.0**: 
+https://techgabs.vercel.app/
 
 • Uma evolução deste projeto já pode ser acessada na versão **2.0**:
 https://breezelabportfolio.vercel.app/
