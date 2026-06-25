@@ -1,107 +1,120 @@
-# 🌬️ Breezelab Studio - v1.0
+# 🌬️ Breezelab Studio — v1.0
 
-## 🚀 Introdução
-Este repositório reúne o desenvolvimento do **site de portfólio pessoal, representado pelo Breezelab**, um laboratório visual e tecnológico onde **arte, cultura e engenharia se encontram**.
+## 🚀 Sobre o Projeto
 
-Mais do que um site, este projeto funciona como um **exercício prático de Front-end Development**, integrando **design, responsividade, organização de código e experiência do usuário**, com atenção à identidade visual e ao contexto de uso em diferentes dispositivos.
+Este repositório reúne a primeira versão do portfólio digital desenvolvido sob a identidade da **Breezelab**, um laboratório criativo onde design, cultura e tecnologia convergem para transformar ideias em experiências digitais.
 
-A proposta não é criar algo complexo por si só, mas demonstrar **clareza estrutural, intenção visual e domínio progressivo do processo de desenvolvimento web**.
+Mais do que um simples site de apresentação, este projeto representa um exercício prático de desenvolvimento front-end, explorando a construção de interfaces com foco em identidade visual, usabilidade e evolução técnica.
 
+Seu propósito não é demonstrar complexidade excessiva, mas evidenciar clareza estrutural, consistência visual e o desenvolvimento gradual de competências fundamentais para a criação de produtos digitais.
 
-## 🎯 Objetivo do Projeto
-Construir um site funcional e responsivo que:
+---
 
-- Traduza uma identidade visual autoral para a web  
-- Funcione bem em diferentes tamanhos de tela 
-- Integre conteúdo multimídia (imagem e vídeo) 
-- Utilize boas práticas de organização front-end 
-- Sirva como base evolutiva para aplicações mais complexas  
+## 🎯 Objetivos
 
-O projeto também atua como **ponte entre design e desenvolvimento**, refletindo uma abordagem orientada a **produto digital**.
+Desenvolver uma aplicação web responsiva capaz de:
 
+* Traduzir uma identidade visual autoral para o ambiente digital;
+* Oferecer uma experiência consistente em diferentes dispositivos e resoluções;
+* Integrar conteúdos multimídia, como imagens e vídeos;
+* Aplicar boas práticas de organização e estruturação front-end;
+* Servir como base para futuras evoluções e experimentações.
 
-## 📒 Descrição
-O site foi desenvolvido utilizando **HTML, CSS e JavaScript**, com foco em:
+Além de funcionar como um portfólio pessoal, o projeto estabelece uma conexão entre design e desenvolvimento, adotando uma visão orientada à construção de produtos digitais.
 
-- Layout responsivo  
-- Hierarquia visual clara  
-- Legibilidade  
-- Performance básica  
-- Experiência do usuário  
+---
 
-O processo partiu do **design no Figma**, utilizando a versão gratuita da ferramenta para agilizar decisões visuais e de responsividade antes da implementação em código.
+## 📖 Visão Geral
 
-A construção do layout priorizou **soluções simples e consistentes**, evitando dependência de frameworks, com o objetivo de reforçar o entendimento dos **fundamentos do front-end**.
+O site foi desenvolvido utilizando tecnologias fundamentais da web moderna, priorizando:
 
+* Responsividade;
+* Hierarquia visual;
+* Legibilidade;
+* Performance;
+* Experiência do usuário.
 
-## 🤖 Tecnologias Utilizadas
-Este projeto utiliza tecnologias web fundamentais, aplicadas de forma consciente e prática:
+Todo o processo de concepção foi inicialmente estruturado no **Figma**, permitindo validar decisões visuais, fluxos e adaptações responsivas antes da implementação em código.
 
-- **HTML5**  
-  Estrutura semântica do conteúdo.
+A construção priorizou soluções simples, consistentes e independentes de frameworks, reforçando o domínio dos fundamentos do desenvolvimento front-end através do uso direto de HTML, CSS e JavaScript.
 
-- **CSS3**  
-  Flexbox, Grid, Media Queries e controle de responsividade.
+---
 
-- **JavaScript (Vanilla)**  
-  Interações básicas, suporte a internacionalização (i18n) e comportamento da interface.
+## 🛠️ Tecnologias Utilizadas
 
-- **Git & GitHub**  
-  Versionamento, histórico de commits e organização do projeto.
+<p align="center">
 
-- **Figma (Free)**  
-  Planejamento visual, layout e apoio ao processo de responsividade.
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 
+Estrutura semântica e organização do conteúdo.
 
-## 🧐 Processo de Criação
-O desenvolvimento seguiu um fluxo simples e replicável:
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-1. **Concepção visual**  
-   Estruturação inicial do layout e identidade no Figma.
+Estilização da interface utilizando Flexbox, Grid Layout, Media Queries e técnicas de responsividade.
 
-2. **Tradução para código**  
-   Implementação progressiva em HTML e CSS, priorizando clareza e organização.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (Vanilla)
 
-3. **Responsividade**  
-   Ajustes para desktop, tablet e mobile utilizando media queries.
+Implementação de interações, comportamentos da interface e suporte à internacionalização (i18n).
 
-4. **Integração de mídia**  
-   Inserção de imagens e vídeos com atenção à proporção e performance.
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) & ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-5. **Ajustes e refinamento**  
-   Revisões visuais, pequenos refactors e melhoria da experiência geral.
+Controle de versão, gerenciamento de histórico e organização do fluxo de desenvolvimento.
 
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
-## 🚀 Status do Projeto
-🟡 **Em evolução**
+Ferramenta utilizada para prototipação, planejamento visual e validação das soluções de interface.
 
-O site segue em desenvolvimento contínuo, com planos de:
+</p>
 
-- Melhorias na organização do CSS  
-- Expansão de interações em JavaScript  
-- Migração gradual de partes do projeto para **React**  
-- Integração com soluções mais próximas de um **produto digital completo**
+## 🔍 Processo de Desenvolvimento
 
+O projeto foi desenvolvido a partir de um fluxo simples e iterativo:
 
-## 💭 Reflexão
-Este projeto não busca impressionar pela complexidade técnica, mas demonstrar algo essencial no desenvolvimento front-end:
+**1. Concepção Visual**
 
-> **clareza, intenção e evolução contínua.**
+Definição da identidade visual, estrutura das páginas e componentes da interface.
 
-Cada decisão — visual ou técnica — parte da ideia de que **o código deve servir à experiência**, e não o contrário.
+**2. Implementação Front-end**
 
-O Breezelab funciona como um espaço de **experimentação, aprendizado e consolidação de fundamentos**, onde design e tecnologia coexistem de forma orgânica.
+Conversão dos protótipos em código utilizando HTML e CSS, com foco em organização e legibilidade.
+
+**3. Responsividade**
+
+Adaptação da interface para desktop, tablet e dispositivos móveis através de Media Queries.
+
+**4. Integração de Conteúdo**
+
+Inserção de elementos visuais e audiovisuais com atenção à proporção, carregamento e experiência de navegação.
+
+### 5. Refinamento
+
+Revisões de interface, ajustes de código, otimizações e melhorias incrementais da experiência do usuário.
 
 
-## 👤 Autor
-**Gabriel Carlos de Souza**  
-Front-end Developer em constante evolução 
-"Transformando limites em combustível criativo!"
-📍 Florianópolis — SC  
-🔗 LinkedIn: https://www.linkedin.com/in/gabrielc-souza/
+## 🚧 Status do Projeto
+
+🟡 **Em evolução contínua**
+
+A versão atual representa a base inicial da proposta e continuará recebendo melhorias, incluindo:
+
+• O esboço na versão **1.0**: 
+https://techgabs.vercel.app/
+
+* Reestruturação e modularização do CSS;
+* Expansão das funcionalidades em JavaScript;
+* Migração gradual para React;
+* Integração de recursos mais próximos de um produto digital completo;
+* Aprimoramento da arquitetura e da experiência geral.
+
+• Uma evolução deste projeto já pode ser acessada na versão **2.0**:
+https://breezelabportfolio.vercel.app/
+
+---
 
 
+Este projeto não foi criado para demonstrar complexidade técnica isoladamente e sim, documentar e exercitar HTML + CSS e testar implementação de i18n.
 
+> **Boas experiências nascem da combinação entre clareza, propósito e evolução constante.**
 
 
 
