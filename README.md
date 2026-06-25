@@ -10,7 +10,7 @@ Seu propósito não é demonstrar complexidade excessiva, mas evidenciar clareza
 
 ---
 
-## 🎯 Objetivos
+**🎯 Objetivos**
 
 Desenvolver uma aplicação web responsiva capaz de:
 
@@ -22,9 +22,9 @@ Desenvolver uma aplicação web responsiva capaz de:
 
 Além de funcionar como um portfólio pessoal, o projeto estabelece uma conexão entre design e desenvolvimento, adotando uma visão orientada à construção de produtos digitais.
 
----
 
-## 📖 Visão Geral
+
+**📖 Visão Geral**
 
 O site foi desenvolvido utilizando tecnologias fundamentais da web moderna, priorizando:
 
@@ -44,7 +44,7 @@ A construção priorizou soluções simples, consistentes e independentes de fra
 
 
 
-## 🔍 Processo de Desenvolvimento
+**🔍 Processo de Desenvolvimento**
 
 O projeto foi desenvolvido a partir de um fluxo simples e iterativo:
 
