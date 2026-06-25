@@ -23,9 +23,7 @@ Além de funcionar como um portfólio pessoal, o projeto estabelece uma conexão
 
 
 
-**📖 Visão Geral**
-
-O site foi desenvolvido utilizando tecnologias fundamentais da web moderna, priorizando:
+**📖 O site foi desenvolvido utilizando tecnologias fundamentais da web moderna, priorizando:**
 
 Responsividade;
 Hierarquia visual;
@@ -43,9 +41,8 @@ A construção priorizou soluções simples, consistentes e independentes de fra
 
 
 
-**🔍 Processo de Desenvolvimento**
+## 🔍 O projeto foi desenvolvido a partir de um fluxo simples e iterativo:
 
-O projeto foi desenvolvido a partir de um fluxo simples e iterativo:
 
 **1. Concepção Visual**
 
@@ -85,8 +82,6 @@ https://techgabs.vercel.app/
 
 • Uma evolução deste projeto já pode ser acessada na versão **2.0**:
 https://breezelabportfolio.vercel.app/
-
----
 
 
 Este projeto não foi criado para demonstrar complexidade técnica isoladamente e sim, documentar e exercitar HTML + CSS e testar implementação de i18n.
