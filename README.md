@@ -2,7 +2,7 @@
 
 ## 🚀 Sobre o Projeto
 
-Este repositório reúne a primeira versão do portfólio digital desenvolvido sob a identidade da **Breezelab**, um laboratório criativo onde design, cultura e tecnologia convergem para transformar ideias em experiências digitais.
+Este repositório reúne a primeira versão do portfólio digital desenvolvido sob a identidade do **Breezelab**, um laboratório criativo onde design, cultura e tecnologia convergem para transformar ideias em experiências digitais.
 
 Mais do que um simples site de apresentação, este projeto representa um exercício prático de desenvolvimento front-end, explorando a construção de interfaces com foco em identidade visual, usabilidade e evolução técnica.
 
