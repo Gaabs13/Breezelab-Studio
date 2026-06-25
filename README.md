@@ -38,33 +38,11 @@ Todo o processo de concepção foi inicialmente estruturado no **Figma**, permit
 
 A construção priorizou soluções simples, consistentes e independentes de frameworks, reforçando o domínio dos fundamentos do desenvolvimento front-end através do uso direto de HTML, CSS e JavaScript.
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-<p align="center">
-
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-
-Estrutura semântica e organização do conteúdo.
-
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-
-Estilização da interface utilizando Flexbox, Grid Layout, Media Queries e técnicas de responsividade.
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (Vanilla)
-
-Implementação de interações, comportamentos da interface e suporte à internacionalização (i18n).
-
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) & ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
-Controle de versão, gerenciamento de histórico e organização do fluxo de desenvolvimento.
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
-Ferramenta utilizada para prototipação, planejamento visual e validação das soluções de interface.
 
-</p>
 
 ## 🔍 Processo de Desenvolvimento
 
